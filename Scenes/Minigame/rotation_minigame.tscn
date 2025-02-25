@@ -1,0 +1,45 @@
+[gd_scene load_steps=6 format=3 uid="uid://b1boh8yiojwfm"]
+
+[ext_resource type="Script" path="res://Scripts/Minigame/rotation_minigame.gd" id="1_cecmr"]
+[ext_resource type="Texture2D" uid="uid://dc6ak632x01q6" path="res://Assets/MiniJeux/RotateMinigame/rotate_bg.png" id="2_1o8ql"]
+[ext_resource type="Script" path="res://addons/MultiTouchGui/MultiTouchButton.gd" id="2_n1v5v"]
+[ext_resource type="Texture2D" uid="uid://j4c16fk55jrd" path="res://Assets/MiniJeux/RotateMinigame/btn_left.png" id="3_0b2kg"]
+[ext_resource type="Texture2D" uid="uid://ds2qt3i7871kk" path="res://Assets/MiniJeux/RotateMinigame/bitonio.png" id="6_c4wl6"]
+
+[node name="RotationMinigame" type="Node2D"]
+script = ExtResource("1_cecmr")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_1o8ql")
+centered = false
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="RotateLeft" type="Button" parent="."]
+offset_left = 28.0
+offset_top = 189.0
+offset_right = 110.0
+offset_bottom = 236.0
+focus_mode = 0
+icon = ExtResource("3_0b2kg")
+flat = true
+script = ExtResource("2_n1v5v")
+icon_normal = ExtResource("3_0b2kg")
+icon_pressed = ExtResource("3_0b2kg")
+
+[node name="RotateRight" type="Button" parent="."]
+offset_left = 178.0
+offset_top = 189.0
+offset_right = 260.0
+offset_bottom = 236.0
+focus_mode = 0
+icon = ExtResource("3_0b2kg")
+flat = true
+script = ExtResource("2_n1v5v")
+icon_normal = ExtResource("3_0b2kg")
+icon_pressed = ExtResource("3_0b2kg")
+
+[node name="Indicateur" type="Sprite2D" parent="."]
+position = Vector2(138, 76.8267)
+scale = Vector2(1.01333, 1.02841)
+texture = ExtResource("6_c4wl6")

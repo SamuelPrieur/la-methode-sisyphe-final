@@ -1,0 +1,79 @@
+[gd_scene load_steps=9 format=3 uid="uid://djgknxy2afku4"]
+
+[ext_resource type="Script" path="res://Scripts/Minigame/curve_minigame.gd" id="1_e42nr"]
+[ext_resource type="Texture2D" uid="uid://epal6thtvu5m" path="res://Assets/MiniJeux/Signal/NobPos2.png" id="2_npg8v"]
+[ext_resource type="Texture2D" uid="uid://clvgb515aeu63" path="res://Assets/MiniJeux/Signal/NobPos1.png" id="4_rwsfc"]
+[ext_resource type="Texture2D" uid="uid://dm8i6syndac3w" path="res://Assets/MiniJeux/Signal/NobPos3.png" id="5_cc6bt"]
+[ext_resource type="Script" path="res://addons/MultiTouchGui/MultiTouchButtonNob.gd" id="6_anj5v"]
+[ext_resource type="Texture2D" uid="uid://dlh2qegyp1mfs" path="res://Assets/MiniJeux/Signal/screen_bg.png" id="6_nvpev"]
+[ext_resource type="Texture2D" uid="uid://blb11ad6mx413" path="res://Assets/MiniJeux/Signal/screen_cover.png" id="7_ornte"]
+
+[sub_resource type="GDScript" id="GDScript_8nxyj"]
+script/source = "extends Line2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(_delta):
+	pass
+"
+
+[node name="CurveMinigame" type="Node2D"]
+script = ExtResource("1_e42nr")
+
+[node name="Line2D" type="Line2D" parent="."]
+z_index = 1
+default_color = Color(1, 1, 0, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+script = SubResource("GDScript_8nxyj")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="ChangeCurve" type="Button" parent="."]
+offset_left = -35.0
+offset_top = 140.0
+offset_right = 73.0
+offset_bottom = 248.0
+scale = Vector2(1.5, 1.5)
+focus_mode = 0
+action_mode = 0
+icon = ExtResource("2_npg8v")
+flat = true
+script = ExtResource("6_anj5v")
+icon_position1 = ExtResource("4_rwsfc")
+icon_position2 = ExtResource("2_npg8v")
+icon_position3 = ExtResource("5_cc6bt")
+
+[node name="ChangeColor" type="Button" parent="."]
+offset_left = 283.0
+offset_top = 140.0
+offset_right = 391.0
+offset_bottom = 248.0
+scale = Vector2(1.5, 1.5)
+focus_mode = 0
+action_mode = 0
+icon = ExtResource("2_npg8v")
+flat = true
+script = ExtResource("6_anj5v")
+icon_position1 = ExtResource("4_rwsfc")
+icon_position2 = ExtResource("2_npg8v")
+icon_position3 = ExtResource("5_cc6bt")
+
+[node name="BG" type="Sprite2D" parent="."]
+position = Vector2(-86, -146)
+scale = Vector2(2, 2)
+texture = ExtResource("6_nvpev")
+centered = false
+
+[node name="Cover" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(-86, -146)
+scale = Vector2(2, 2)
+texture = ExtResource("7_ornte")
+centered = false

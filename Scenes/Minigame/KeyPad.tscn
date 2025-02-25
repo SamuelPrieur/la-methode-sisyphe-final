@@ -1,0 +1,148 @@
+[gd_scene load_steps=29 format=3 uid="uid://0klunj0c1ti"]
+
+[ext_resource type="Script" path="res://Scripts/Minigame/key_pad.gd" id="1_ae0dv"]
+[ext_resource type="Texture2D" uid="uid://vji6vd64snyd" path="res://Assets/Keypad/keypad.png" id="1_h0cu3"]
+[ext_resource type="Texture2D" uid="uid://curi334tivdnc" path="res://Assets/Keypad/button_unpressed/1_unpressed.png" id="2_ukqgl"]
+[ext_resource type="Texture2D" uid="uid://bmbr0a0yigaq8" path="res://Assets/Keypad/button_pressed/1_pressed.png" id="3_qnafv"]
+[ext_resource type="Texture2D" uid="uid://0au3ajgmct3p" path="res://Assets/Keypad/button_unpressed/2_unpressed.png" id="4_s7gj7"]
+[ext_resource type="Texture2D" uid="uid://dk40xdt7pjbfd" path="res://Assets/Keypad/button_pressed/2_pressed.png" id="5_1ee48"]
+[ext_resource type="Texture2D" uid="uid://dauaed3ksjpip" path="res://Assets/Keypad/button_unpressed/3_unpressed.png" id="6_pw40f"]
+[ext_resource type="Texture2D" uid="uid://du48qk4rst11b" path="res://Assets/Keypad/button_pressed/3_pressed.png" id="7_3g76v"]
+[ext_resource type="Texture2D" uid="uid://bx4504sfgse4k" path="res://Assets/Keypad/button_unpressed/c_unpressed.png" id="8_b1nq5"]
+[ext_resource type="Texture2D" uid="uid://cyj75labhii6s" path="res://Assets/Keypad/button_pressed/c_pressed.png.png" id="9_cuxr4"]
+[ext_resource type="Texture2D" uid="uid://dsxyt14j4xl8b" path="res://Assets/Keypad/button_unpressed/4_unpressed.png" id="10_u4rso"]
+[ext_resource type="Texture2D" uid="uid://bxl06a0akg3cw" path="res://Assets/Keypad/button_pressed/4_pressed.png" id="11_agumx"]
+[ext_resource type="Texture2D" uid="uid://ojjf507fx6ye" path="res://Assets/Keypad/button_unpressed/5_unpressed.png" id="12_smwjw"]
+[ext_resource type="Texture2D" uid="uid://bolrdfnowt2x2" path="res://Assets/Keypad/button_pressed/5_pressed.png" id="13_yq7hm"]
+[ext_resource type="Texture2D" uid="uid://w00k15lfxfp0" path="res://Assets/Keypad/button_unpressed/6_unpressed.png" id="14_yirhe"]
+[ext_resource type="Texture2D" uid="uid://didw8lyf2gsuu" path="res://Assets/Keypad/button_pressed/6_pressed.png" id="15_iro7o"]
+[ext_resource type="Texture2D" uid="uid://bu22th7k6o1se" path="res://Assets/Keypad/button_unpressed/Enter_unpressed.png" id="16_5uubs"]
+[ext_resource type="Texture2D" uid="uid://c7smr72fpqlde" path="res://Assets/Keypad/button_pressed/Enter_pressed.png" id="17_jpars"]
+[ext_resource type="Texture2D" uid="uid://7x7ha8672lcg" path="res://Assets/Keypad/button_unpressed/9_unpressed.png" id="18_fxw5u"]
+[ext_resource type="Texture2D" uid="uid://8wsm5j8ydm8i" path="res://Assets/Keypad/button_unpressed/7_unpressed.png" id="19_dg1r4"]
+[ext_resource type="Texture2D" uid="uid://cip5l2s4vf7yw" path="res://Assets/Keypad/button_pressed/9_pressed.png" id="19_xn2do"]
+[ext_resource type="Texture2D" uid="uid://deofaem8oqd1s" path="res://Assets/Keypad/button_pressed/7_pressed.png" id="20_o5d36"]
+[ext_resource type="Texture2D" uid="uid://rfoafh5hul6r" path="res://Assets/Keypad/button_unpressed/8_unpressed.png" id="21_6gh5c"]
+[ext_resource type="Texture2D" uid="uid://ubsbdjpdljqm" path="res://Assets/Keypad/button_pressed/8_pressed.png" id="22_hkgj5"]
+[ext_resource type="Texture2D" uid="uid://bedtq43catis2" path="res://Assets/Keypad/keypad_overlay.png" id="24_2sw86"]
+[ext_resource type="FontFile" uid="uid://dqsa0exp8rcue" path="res://Assets/Font/PPNeueBit-Bold.otf" id="25_83lqq"]
+
+[sub_resource type="FontVariation" id="FontVariation_0fwhf"]
+base_font = ExtResource("25_83lqq")
+spacing_glyph = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_mpw54"]
+line_spacing = 10.0
+font = ExtResource("25_83lqq")
+font_size = 250
+font_color = Color(0.117647, 0.901961, 0.431373, 1)
+
+[node name="Keypad" type="Node2D"]
+script = ExtResource("1_ae0dv")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-10, -76)
+
+[node name="Background" type="Sprite2D" parent="."]
+texture = ExtResource("1_h0cu3")
+
+[node name="KeyPad1" type="TextureButton" parent="."]
+offset_left = -253.0
+offset_top = -155.0
+offset_right = -126.0
+offset_bottom = -25.0
+texture_normal = ExtResource("2_ukqgl")
+texture_pressed = ExtResource("3_qnafv")
+
+[node name="KeyPad2" type="TextureButton" parent="."]
+offset_left = -110.0
+offset_top = -155.0
+offset_right = 17.0
+offset_bottom = -25.0
+texture_normal = ExtResource("4_s7gj7")
+texture_pressed = ExtResource("5_1ee48")
+
+[node name="KeyPad3" type="TextureButton" parent="."]
+offset_left = 32.0
+offset_top = -155.0
+offset_right = 159.0
+offset_bottom = -25.0
+texture_normal = ExtResource("6_pw40f")
+texture_pressed = ExtResource("7_3g76v")
+
+[node name="KeyPad4" type="TextureButton" parent="."]
+offset_left = -253.0
+offset_top = -11.0
+offset_right = -126.0
+offset_bottom = 119.0
+texture_normal = ExtResource("10_u4rso")
+texture_pressed = ExtResource("11_agumx")
+
+[node name="KeyPad5" type="TextureButton" parent="."]
+offset_left = -110.0
+offset_top = -11.0
+offset_right = 17.0
+offset_bottom = 119.0
+texture_normal = ExtResource("12_smwjw")
+texture_pressed = ExtResource("13_yq7hm")
+
+[node name="KeyPad6" type="TextureButton" parent="."]
+offset_left = 32.0
+offset_top = -11.0
+offset_right = 159.0
+offset_bottom = 119.0
+texture_normal = ExtResource("14_yirhe")
+texture_pressed = ExtResource("15_iro7o")
+
+[node name="KeyPad7" type="TextureButton" parent="."]
+offset_left = -253.0
+offset_top = 135.0
+offset_right = -126.0
+offset_bottom = 265.0
+texture_normal = ExtResource("19_dg1r4")
+texture_pressed = ExtResource("20_o5d36")
+
+[node name="KeyPad8" type="TextureButton" parent="."]
+offset_left = -110.0
+offset_top = 135.0
+offset_right = 17.0
+offset_bottom = 265.0
+texture_normal = ExtResource("21_6gh5c")
+texture_pressed = ExtResource("22_hkgj5")
+
+[node name="KeyPad9" type="TextureButton" parent="."]
+offset_left = 32.0
+offset_top = 135.0
+offset_right = 159.0
+offset_bottom = 265.0
+texture_normal = ExtResource("18_fxw5u")
+texture_pressed = ExtResource("19_xn2do")
+
+[node name="KeyPadErase" type="TextureButton" parent="."]
+offset_left = 174.0
+offset_top = -155.0
+offset_right = 259.0
+offset_bottom = -25.0
+texture_normal = ExtResource("8_b1nq5")
+texture_pressed = ExtResource("9_cuxr4")
+
+[node name="KeyPadEnter" type="TextureButton" parent="."]
+offset_left = 174.0
+offset_top = -11.0
+offset_right = 260.0
+offset_bottom = 264.0
+texture_normal = ExtResource("16_5uubs")
+texture_pressed = ExtResource("17_jpars")
+
+[node name="NumberOverlay" type="Sprite2D" parent="."]
+texture = ExtResource("24_2sw86")
+
+[node name="Code" type="Label" parent="."]
+offset_left = -195.0
+offset_top = -360.0
+offset_right = 198.0
+offset_bottom = -190.0
+theme_override_fonts/font = SubResource("FontVariation_0fwhf")
+text = "8888"
+label_settings = SubResource("LabelSettings_mpw54")
+horizontal_alignment = 1

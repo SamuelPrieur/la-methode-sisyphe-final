@@ -1,0 +1,174 @@
+[gd_scene load_steps=24 format=3 uid="uid://17cf7ihimd4o"]
+
+[ext_resource type="Script" path="res://Scripts/Minigame/OrderMinigame.gd" id="1_k73cg"]
+[ext_resource type="Script" path="res://addons/MultiTouchGui/MultiTouchButton.gd" id="1_tlnh6"]
+[ext_resource type="Texture2D" uid="uid://dfbpupr0u8inq" path="res://Assets/MiniJeux/OrderMinigame/ombre.png" id="2_mv66j"]
+[ext_resource type="Texture2D" uid="uid://bwk2e6n2av42c" path="res://Assets/MiniJeux/OrderMinigame/ButtonOn/bouton 2 -0.png" id="3_tdsq1"]
+[ext_resource type="Texture2D" uid="uid://becraji6sakp5" path="res://Assets/MiniJeux/OrderMinigame/ButtonOff/bouton 2 -1.png" id="5_le6c5"]
+[ext_resource type="Texture2D" uid="uid://6enm46d7lyy3" path="res://Assets/MiniJeux/OrderMinigame/ButtonOn/bouton 3 -0.png" id="6_mbea7"]
+[ext_resource type="Texture2D" uid="uid://cqolqjp54nce5" path="res://Assets/MiniJeux/OrderMinigame/ButtonOff/bouton 3 -1.png" id="7_laone"]
+[ext_resource type="Texture2D" uid="uid://bodsq1o00bda8" path="res://Assets/MiniJeux/OrderMinigame/ButtonOn/bouton 4 -0.png" id="8_yy6wq"]
+[ext_resource type="Texture2D" uid="uid://bovr0spakhviq" path="res://Assets/MiniJeux/OrderMinigame/ButtonOff/bouton 4 -1.png" id="9_p86cq"]
+[ext_resource type="Texture2D" uid="uid://bpqg81ktkqejn" path="res://Assets/MiniJeux/OrderMinigame/ButtonOn/bouton 6 -0.png" id="10_5e1px"]
+[ext_resource type="Texture2D" uid="uid://do3puyk6gsfaf" path="res://Assets/MiniJeux/OrderMinigame/ButtonOff/bouton 6 -1.png" id="11_g7g5g"]
+[ext_resource type="Texture2D" uid="uid://cwj8ee48b4x0e" path="res://Assets/MiniJeux/OrderMinigame/ButtonOn/bouton 8 -0.png" id="12_24qet"]
+[ext_resource type="Texture2D" uid="uid://mscotin8dolk" path="res://Assets/MiniJeux/OrderMinigame/ButtonOff/bouton 8 -1.png" id="13_tmsju"]
+[ext_resource type="Texture2D" uid="uid://x878y8vei64d" path="res://Assets/MiniJeux/OrderMinigame/ButtonOn/bouton 9 -0.png" id="14_06ytu"]
+[ext_resource type="Texture2D" uid="uid://cpnwtfq3abd7f" path="res://Assets/MiniJeux/OrderMinigame/ButtonOff/bouton 9 -1.png" id="15_18iup"]
+[ext_resource type="Texture2D" uid="uid://0dgaby6672g8" path="res://Assets/MiniJeux/OrderMinigame/ButtonOn/bouton 10 -0.png" id="16_fuo5d"]
+[ext_resource type="Texture2D" uid="uid://bv8i06p2s0lno" path="res://Assets/MiniJeux/OrderMinigame/ButtonOff/bouton 10 -1.png" id="17_4jaoh"]
+[ext_resource type="Texture2D" uid="uid://w8subckhd0ld" path="res://Assets/MiniJeux/OrderMinigame/ButtonOn/bouton 5 -0.png" id="18_6h6qv"]
+[ext_resource type="Texture2D" uid="uid://dqg8d4bbwrfsg" path="res://Assets/MiniJeux/OrderMinigame/ButtonOff/bouton 5 -1.png" id="19_iixfl"]
+[ext_resource type="Texture2D" uid="uid://cydngcv17v5vx" path="res://Assets/MiniJeux/OrderMinigame/ButtonOn/bouton 7 -0.png" id="20_q3ffu"]
+[ext_resource type="Texture2D" uid="uid://tj1t7e0pp4ky" path="res://Assets/MiniJeux/OrderMinigame/ButtonOff/bouton 7 -1.png" id="21_ktk7v"]
+[ext_resource type="Texture2D" uid="uid://c1bh8dk4xbka5" path="res://Assets/MiniJeux/OrderMinigame/ButtonOn/bouton 1 -0.png" id="22_1al2y"]
+[ext_resource type="Texture2D" uid="uid://xm4v6a2gsbb" path="res://Assets/MiniJeux/OrderMinigame/ButtonOff/bouton 1 -1.png" id="23_28mdu"]
+
+[node name="OrderMinigame" type="Node2D"]
+script = ExtResource("1_k73cg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-48, -56)
+scale = Vector2(1.11082, 1)
+texture = ExtResource("2_mv66j")
+centered = false
+
+[node name="OrderButton2" type="Button" parent="."]
+offset_left = 128.0
+offset_top = 58.0
+offset_right = 200.0
+offset_bottom = 156.0
+focus_mode = 0
+action_mode = 0
+icon = ExtResource("3_tdsq1")
+flat = true
+script = ExtResource("1_tlnh6")
+icon_normal = ExtResource("3_tdsq1")
+icon_pressed = ExtResource("5_le6c5")
+metadata/_edit_use_anchors_ = true
+
+[node name="OrderButton3" type="Button" parent="."]
+offset_left = 58.0
+offset_top = 58.0
+offset_right = 129.0
+offset_bottom = 156.0
+focus_mode = 0
+action_mode = 0
+icon = ExtResource("6_mbea7")
+flat = true
+script = ExtResource("1_tlnh6")
+icon_normal = ExtResource("6_mbea7")
+icon_pressed = ExtResource("7_laone")
+metadata/_edit_use_anchors_ = true
+
+[node name="OrderButton4" type="Button" parent="."]
+offset_left = 264.0
+offset_top = 58.0
+offset_right = 336.0
+offset_bottom = 156.0
+focus_mode = 0
+action_mode = 0
+icon = ExtResource("8_yy6wq")
+flat = true
+script = ExtResource("1_tlnh6")
+icon_normal = ExtResource("8_yy6wq")
+icon_pressed = ExtResource("9_p86cq")
+metadata/_edit_use_anchors_ = true
+
+[node name="OrderButton6" type="Button" parent="."]
+offset_left = 240.0
+offset_top = -40.0
+offset_right = 312.0
+offset_bottom = 58.0
+focus_mode = 0
+action_mode = 0
+icon = ExtResource("10_5e1px")
+flat = true
+script = ExtResource("1_tlnh6")
+icon_normal = ExtResource("10_5e1px")
+icon_pressed = ExtResource("11_g7g5g")
+metadata/_edit_use_anchors_ = true
+
+[node name="OrderButton8" type="Button" parent="."]
+offset_left = 40.0
+offset_top = -40.0
+offset_right = 111.0
+offset_bottom = 58.0
+focus_mode = 0
+action_mode = 0
+icon = ExtResource("12_24qet")
+flat = true
+script = ExtResource("1_tlnh6")
+icon_normal = ExtResource("12_24qet")
+icon_pressed = ExtResource("13_tmsju")
+metadata/_edit_use_anchors_ = true
+
+[node name="OrderButton9" type="Button" parent="."]
+offset_left = -8.0
+offset_top = 58.0
+offset_right = 58.0
+offset_bottom = 156.0
+focus_mode = 0
+action_mode = 0
+icon = ExtResource("14_06ytu")
+flat = true
+script = ExtResource("1_tlnh6")
+icon_normal = ExtResource("14_06ytu")
+icon_pressed = ExtResource("15_18iup")
+metadata/_edit_use_anchors_ = true
+
+[node name="OrderButton10" type="Button" parent="."]
+offset_left = 192.0
+offset_top = 58.0
+offset_right = 271.0
+offset_bottom = 156.0
+focus_mode = 0
+action_mode = 0
+icon = ExtResource("16_fuo5d")
+flat = true
+script = ExtResource("1_tlnh6")
+icon_normal = ExtResource("16_fuo5d")
+icon_pressed = ExtResource("17_4jaoh")
+metadata/_edit_use_anchors_ = true
+
+[node name="OrderButton5" type="Button" parent="."]
+offset_left = 104.0
+offset_top = -40.0
+offset_right = 176.0
+offset_bottom = 58.0
+focus_mode = 0
+action_mode = 0
+icon = ExtResource("18_6h6qv")
+flat = true
+script = ExtResource("1_tlnh6")
+icon_normal = ExtResource("18_6h6qv")
+icon_pressed = ExtResource("19_iixfl")
+metadata/_edit_use_anchors_ = true
+
+[node name="OrderButton7" type="Button" parent="."]
+offset_left = 172.0
+offset_top = -40.0
+offset_right = 243.0
+offset_bottom = 58.0
+focus_mode = 0
+action_mode = 0
+icon = ExtResource("20_q3ffu")
+flat = true
+script = ExtResource("1_tlnh6")
+icon_normal = ExtResource("20_q3ffu")
+icon_pressed = ExtResource("21_ktk7v")
+metadata/_edit_use_anchors_ = true
+
+[node name="OrderButton1" type="Button" parent="."]
+offset_left = -24.0
+offset_top = -40.0
+offset_right = 42.0
+offset_bottom = 58.0
+focus_mode = 0
+action_mode = 0
+icon = ExtResource("22_1al2y")
+flat = true
+script = ExtResource("1_tlnh6")
+icon_normal = ExtResource("22_1al2y")
+icon_pressed = ExtResource("23_28mdu")
+metadata/_edit_use_anchors_ = true

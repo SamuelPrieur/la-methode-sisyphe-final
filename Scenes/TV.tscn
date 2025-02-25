@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=3 uid="uid://b2sp4q3o28mfs"]
+
+[ext_resource type="Texture2D" uid="uid://vy7hk335xkle" path="res://Assets/TV/tele.png" id="1_35xx7"]
+[ext_resource type="Script" path="res://Scripts/TV.gd" id="2_s60y6"]
+[ext_resource type="FontFile" uid="uid://dq0x0w84fnv0a" path="res://Assets/Font/OffBitTrial-Bold.ttf" id="3_r5u7k"]
+
+[sub_resource type="Gradient" id="Gradient_lrnjd"]
+colors = PackedColorArray(0.129412, 0.368627, 0.494118, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_nooln"]
+gradient = SubResource("Gradient_lrnjd")
+use_hdr = true
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.833693, 0.12959)
+
+[sub_resource type="LabelSettings" id="LabelSettings_1mv0w"]
+line_spacing = 5.0
+font = ExtResource("3_r5u7k")
+font_size = 30
+font_color = Color(0, 1, 0, 1)
+shadow_size = 0
+
+[node name="TV" type="Sprite2D"]
+scale = Vector2(3.91971, 3.91971)
+texture = ExtResource("1_35xx7")
+centered = false
+script = ExtResource("2_s60y6")
+
+[node name="LightTV" type="PointLight2D" parent="."]
+position = Vector2(167.104, 184.963)
+scale = Vector2(7.67755, 6.41137)
+color = Color(0.301961, 0.301961, 0.301961, 1)
+energy = 2.5
+texture = SubResource("GradientTexture2D_nooln")
+
+[node name="TaskDescription" type="Label" parent="."]
+z_index = 1
+offset_left = 20.0
+offset_top = 101.0
+offset_right = 303.0
+offset_bottom = 262.0
+text = "Appuyer sur le bouton hjdzihdz"
+label_settings = SubResource("LabelSettings_1mv0w")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3

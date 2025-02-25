@@ -1,0 +1,57 @@
+[gd_scene load_steps=11 format=3 uid="uid://bk7ssxsrkdmvv"]
+
+[ext_resource type="Script" path="res://Scripts/Minigame/ventilateur.gd" id="1_g5h58"]
+[ext_resource type="Script" path="res://addons/MultiTouchGui/MultiTouchButton.gd" id="1_nhx66"]
+[ext_resource type="Texture2D" uid="uid://duaw6rl7dm8b0" path="res://Assets/Ventilator/ventilo_accroche.png" id="2_iq65y"]
+[ext_resource type="Texture2D" uid="uid://bvx1vdp0u0vxt" path="res://Assets/Ventilator/cage.png" id="4_0iy27"]
+[ext_resource type="Texture2D" uid="uid://bcbj6hl16sg4v" path="res://Assets/Ventilator/pales/pales2.png" id="4_3ybvt"]
+[ext_resource type="Texture2D" uid="uid://08ym72l7n37u" path="res://Assets/Ventilator/pales/pales3.png" id="5_hcpn1"]
+[ext_resource type="Texture2D" uid="uid://dw86s2su8bm5c" path="res://Assets/Ventilator/pales/pales4.png" id="6_0454h"]
+[ext_resource type="Texture2D" uid="uid://4w8mgges8osf" path="res://Assets/Ventilator/pales/pales5.png" id="7_tv25a"]
+[ext_resource type="Texture2D" uid="uid://cmudlk6agtt7e" path="res://Assets/Ventilator/pales/pales.png" id="8_escso"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_arx3k"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_3ybvt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_hcpn1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_0454h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_tv25a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_escso")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[node name="Ventilateur" type="Node2D"]
+script = ExtResource("1_g5h58")
+
+[node name="InteractionVentilateur" type="Button" parent="."]
+offset_left = -156.0
+offset_top = -157.0
+offset_right = 158.0
+offset_bottom = 155.0
+focus_mode = 0
+flat = true
+script = ExtResource("1_nhx66")
+
+[node name="Fond" type="Sprite2D" parent="."]
+texture = ExtResource("2_iq65y")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-14, -3)
+sprite_frames = SubResource("SpriteFrames_arx3k")
+frame_progress = 0.606856
+
+[node name="Grille" type="Sprite2D" parent="."]
+texture = ExtResource("4_0iy27")

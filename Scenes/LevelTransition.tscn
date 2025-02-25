@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://dkvx7g006a55m"]
+
+[ext_resource type="Script" path="res://Scripts/level_transition.gd" id="1_3opwn"]
+[ext_resource type="VideoStream" path="res://Assets/Videos/Decollage.ogv" id="4_xmnp7"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3opwn")
+
+[node name="TransitionVideo" type="VideoStreamPlayer" parent="."]
+z_index = 1
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+stream = ExtResource("4_xmnp7")
+volume_db = 10.0
+autoplay = true

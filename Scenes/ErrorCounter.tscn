@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjqhoi2yq7ui"]
+
+[ext_resource type="Texture2D" uid="uid://bce4reseeyf8o" path="res://Assets/Error/affichage_croix_rouge_croix.png" id="1_3sep2"]
+[ext_resource type="Texture2D" uid="uid://nm0y5j06xdxy" path="res://Assets/Error/affichage_croix_rouge.png" id="2_7qmqk"]
+
+[node name="ErrorCounter" type="Node2D"]
+
+[node name="Croix3" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(272.5, 291)
+scale = Vector2(0.388889, 0.388889)
+texture = ExtResource("1_3sep2")
+
+[node name="Croix2" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(523.5, 291)
+scale = Vector2(0.388889, 0.388889)
+texture = ExtResource("1_3sep2")
+
+[node name="Croix1" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(767.5, 291)
+scale = Vector2(0.388889, 0.388889)
+texture = ExtResource("1_3sep2")
+
+[node name="Compteur" type="Sprite2D" parent="."]
+position = Vector2(463.5, 213)
+texture = ExtResource("2_7qmqk")

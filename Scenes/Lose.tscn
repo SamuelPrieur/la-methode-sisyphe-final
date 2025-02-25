@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://dvj86dd5cswmy"]
+
+[ext_resource type="Script" path="res://Scripts/lose.gd" id="1_yfvk5"]
+[ext_resource type="FontFile" uid="uid://dqsa0exp8rcue" path="res://Assets/Font/PPNeueBit-Bold.otf" id="21_0myy0"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_rpsbn"]
+font = ExtResource("21_0myy0")
+font_size = 150
+
+[sub_resource type="LabelSettings" id="LabelSettings_fdwt7"]
+font = ExtResource("21_0myy0")
+font_size = 90
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_yfvk5")
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_left = 274.0
+offset_top = 437.0
+offset_right = 1578.0
+offset_bottom = 520.0
+text = "Score : 20"
+label_settings = SubResource("LabelSettings_rpsbn")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ExitButton" type="Button" parent="."]
+z_index = 11
+offset_left = 822.0
+offset_top = 685.0
+offset_right = 1102.0
+offset_bottom = 779.0
+focus_mode = 0
+flat = true
+
+[node name="LabelQuitButton" type="Label" parent="."]
+z_index = 2
+offset_left = 837.0
+offset_top = 704.0
+offset_right = 1084.0
+offset_bottom = 767.0
+text = "QUITTER"
+label_settings = SubResource("LabelSettings_fdwt7")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true

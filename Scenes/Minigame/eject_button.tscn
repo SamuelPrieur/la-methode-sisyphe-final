@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://bhp7rwdkrgdbx"]
+
+[ext_resource type="Script" path="res://Scripts/Minigame/eject_button.gd" id="1_1vmj4"]
+[ext_resource type="Texture2D" uid="uid://bv430pd7d0t7a" path="res://Assets/Eject/verre-ferme.png" id="1_ucn5p"]
+[ext_resource type="Script" path="res://addons/MultiTouchGui/MultiTouchButton.gd" id="2_5nrvj"]
+[ext_resource type="Texture2D" uid="uid://dupb636rlc5vq" path="res://Assets/Eject/verre-ouvert.png" id="2_jv0wn"]
+
+[node name="EjectButton" type="Node2D"]
+script = ExtResource("1_1vmj4")
+second_texture = ExtResource("2_jv0wn")
+
+[node name="Fond" type="Sprite2D" parent="."]
+texture = ExtResource("1_ucn5p")
+
+[node name="EjectButton" type="Button" parent="."]
+offset_left = -19.0
+offset_top = -41.0
+offset_right = 89.0
+offset_bottom = 48.0
+flat = true
+script = ExtResource("2_5nrvj")

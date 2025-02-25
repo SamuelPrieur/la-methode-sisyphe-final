@@ -1,0 +1,62 @@
+[gd_scene load_steps=5 format=3 uid="uid://p48jwya14kf0"]
+
+[ext_resource type="Script" path="res://Scripts/Minigame/cube_placement.gd" id="1_3wryi"]
+[ext_resource type="Script" path="res://addons/MultiTouchGui/MultiTouchButton.gd" id="1_s1n8d"]
+[ext_resource type="Texture2D" uid="uid://dtd1ooigv7xow" path="res://Assets/MiniJeux/CubePlacement/stab_bg.png" id="2_f8i65"]
+[ext_resource type="Texture2D" uid="uid://bylfepo8jvpvo" path="res://Assets/MiniJeux/CubePlacement/stab_cuyrsor.png" id="4_pptfp"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_3wryi")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(68, -61)
+scale = Vector2(1.98113, 1.98113)
+texture = ExtResource("2_f8i65")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Cube" type="Sprite2D" parent="."]
+scale = Vector2(1.78182, 1.78182)
+texture = ExtResource("4_pptfp")
+
+[node name="LeftButton" type="Button" parent="."]
+offset_left = -240.0
+offset_top = -53.0
+offset_right = -89.0
+offset_bottom = 108.0
+rotation = -0.0872665
+focus_mode = 0
+action_mode = 0
+flat = true
+script = ExtResource("1_s1n8d")
+
+[node name="DownButton" type="Button" parent="."]
+offset_left = -111.0
+offset_top = 74.0
+offset_right = 149.0
+offset_bottom = 227.0
+focus_mode = 0
+action_mode = 0
+flat = true
+script = ExtResource("1_s1n8d")
+
+[node name="RightButton" type="Button" parent="."]
+offset_left = 58.0
+offset_top = -55.0
+offset_right = 199.0
+offset_bottom = 123.0
+rotation = -0.226893
+focus_mode = 0
+action_mode = 0
+flat = true
+script = ExtResource("1_s1n8d")
+
+[node name="UpButton" type="Button" parent="."]
+offset_left = -163.0
+offset_top = -197.0
+offset_right = 95.0
+offset_bottom = -64.0
+focus_mode = 0
+action_mode = 0
+flat = true
+script = ExtResource("1_s1n8d")
