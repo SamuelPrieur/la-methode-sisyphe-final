@@ -9,18 +9,18 @@ func _ready():
 		icon = icon_normal
  
 func _gui_input(event):
+	var inside = event.position.x > global_position.x \
+		and event.position.y > global_position.y \
+		and event.position.x < global_position.x + size.x \
+		and event.position.y < global_position.y + size.y
 
-	if event is InputEventScreenTouch and event.pressed:
-		if toggle_mode:
+	if event is InputEventScreenTouch and event.pressed :
+		if not toggle_mode:
 			toggled.emit()
 			button_pressed = true
-		else:
-			pressed.emit()
-			button_down.emit()
 			icon = icon_pressed
 
-	elif event is InputEventScreenTouch or (event is InputEventScreenTouch and !event.pressed):
+	elif (event is InputEventScreenTouch and inside) or (event is InputEventScreenTouch and !event.pressed and !inside):
 		button_up.emit()
 		icon = icon_normal
 		button_pressed = false
-
