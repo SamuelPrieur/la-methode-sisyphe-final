@@ -1187,40 +1187,6 @@ icon_normal = ExtResource("95_vo51c")
 icon_pressed = ExtResource("95_vo51c")
 metadata/_edit_use_anchors_ = true
 
-[node name="Alternateur" type="Button" parent="TaskManager"]
-offset_left = 273.0
-offset_top = 452.0
-offset_right = 367.0
-offset_bottom = 626.0
-scale = Vector2(0.9, 0.9)
-focus_mode = 0
-toggle_mode = true
-action_mode = 0
-icon = ExtResource("113_xpcab")
-flat = true
-expand_icon = true
-script = ExtResource("105_nuyac")
-icon_normal = ExtResource("113_xpcab")
-icon_pressed = ExtResource("114_8xqla")
-metadata/_edit_use_anchors_ = true
-
-[node name="Plasma" type="Button" parent="TaskManager"]
-offset_left = 11.0
-offset_top = 452.0
-offset_right = 105.0
-offset_bottom = 626.0
-scale = Vector2(0.9, 0.9)
-focus_mode = 0
-toggle_mode = true
-action_mode = 0
-icon = ExtResource("115_anwc2")
-flat = true
-expand_icon = true
-script = ExtResource("105_nuyac")
-icon_normal = ExtResource("115_anwc2")
-icon_pressed = ExtResource("116_pgyi6")
-metadata/_edit_use_anchors_ = true
-
 [node name="OrderMinigame" parent="TaskManager" instance=ExtResource("8_swf1g")]
 position = Vector2(1412, 491)
 scale = Vector2(0.73, 0.73)
@@ -1232,6 +1198,38 @@ scale = Vector2(0.33, 0.33)
 [node name="CurveMinigame" parent="TaskManager" instance=ExtResource("101_s1wen")]
 position = Vector2(606, 499)
 scale = Vector2(0.5, 0.5)
+
+[node name="Plasma" type="Button" parent="TaskManager"]
+offset_left = 11.0
+offset_top = 452.0
+offset_right = 105.0
+offset_bottom = 626.0
+scale = Vector2(0.9, 0.9)
+focus_mode = 0
+action_mode = 0
+icon = ExtResource("115_anwc2")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("105_nuyac")
+icon_normal = ExtResource("115_anwc2")
+icon_pressed = ExtResource("116_pgyi6")
+
+[node name="Alternateur" type="Button" parent="TaskManager"]
+offset_left = 273.0
+offset_top = 452.0
+offset_right = 367.0
+offset_bottom = 626.0
+scale = Vector2(0.9, 0.9)
+focus_mode = 0
+action_mode = 0
+icon = ExtResource("113_xpcab")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("105_nuyac")
+icon_normal = ExtResource("113_xpcab")
+icon_pressed = ExtResource("114_8xqla")
 
 [node name="TaskManagerTwo" type="Node" parent="."]
 script = ExtResource("206_anvfx")
