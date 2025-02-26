@@ -16,7 +16,13 @@ var is_centered = false
 var audio_player_cube
 
 func _ready():
-	var main_game = get_node("/root/Panel/TaskManagerTwo")
+	var main_game = null  
+	match Global.player_number:
+		1:
+			main_game = get_node_or_null("/root/Panel/TaskManager")
+		2:
+			main_game = get_node_or_null("/root/Panel/TaskManagerTwo")
+	
 	if main_game:
 		main_game.cube_minigame_selected.connect(randomize_position)
 	

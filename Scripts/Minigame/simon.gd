@@ -38,7 +38,13 @@ func _ready():
 		color_buttons.append(btn)
 		btn.pressed.connect(func(): _on_ColorButton_pressed(i - 1))  
 	
-	var main_game = get_node("/root/Panel/TaskManagerTwo")
+	var main_game = null  
+	match Global.player_number:
+		1:
+			main_game = get_node_or_null("/root/Panel/TaskManager")
+		2:
+			main_game = get_node_or_null("/root/Panel/TaskManagerTwo")
+
 	if main_game:
 		await main_game.simon_minigame_selected.connect(clignoter_tous_les_boutons)
 		

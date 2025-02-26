@@ -1,6 +1,6 @@
 extends Node
 
-var player_number = 2
+var player_number = 1
 
 var score: int = 0
 var level: int = 1
