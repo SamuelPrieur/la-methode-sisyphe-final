@@ -39,7 +39,7 @@ var target_y = -200.0
 var default_y = 150.0  
 
 # Mini jeu ordre croissant
-@onready var order_minigame_scene = preload("res://Scenes/Minigame/Order.tscn")
+@onready var order_minigame_scene = load("res://Scenes/Minigame/Order.tscn")
 var order_minigame_instance = null
 
 # Signal

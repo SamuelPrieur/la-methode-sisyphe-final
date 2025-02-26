@@ -6,17 +6,17 @@ func _ready():
 	
 	match Global.level:
 		1:
-			video_player.stream = preload("res://Assets/Videos/Decollage.ogv")
+			video_player.stream = load("res://Assets/Videos/Decollage.ogv")
 		2:
-			video_player.stream = preload("res://Assets/Videos/HyperEspace.ogv")
+			video_player.stream = load("res://Assets/Videos/HyperEspace.ogv")
 		3:
-			video_player.stream = preload("res://Assets/Videos/Turbulences.ogv")
+			video_player.stream = load("res://Assets/Videos/Turbulences.ogv")
 		4:
-			video_player.stream = preload("res://Assets/Videos/Orage.ogv")
+			video_player.stream = load("res://Assets/Videos/Orage.ogv")
 		5:
-			video_player.stream = preload("res://Assets/Videos/Feu.ogv")
+			video_player.stream = load("res://Assets/Videos/Feu.ogv")
 		6:
-			video_player.stream = preload("res://Assets/Videos/Amerrissage.ogv")
+			video_player.stream = load("res://Assets/Videos/Amerrissage.ogv")
 	video_player.play()
 	video_player.finished.connect(_on_video_finished)
 
