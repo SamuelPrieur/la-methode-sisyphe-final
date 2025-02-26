@@ -42,6 +42,7 @@ offset_top = -157.0
 offset_right = 158.0
 offset_bottom = 155.0
 focus_mode = 0
+action_mode = 0
 flat = true
 script = ExtResource("1_nhx66")
 
