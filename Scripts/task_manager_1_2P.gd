@@ -6,6 +6,7 @@ signal task_failed(task_name: String)
 signal cube_minigame_selected
 signal rotation_minigame_selected
 signal simon_minigame_selected
+signal order_minigame_selected
 signal signal_minigame_selected
 
 
@@ -123,7 +124,7 @@ func hold_light():
 # ----------------------- Commencer une nouvelle tache aléatoire ----------------------- #
 
 func start_random_task():
-	# Réinitialisation de la lumière
+	# Réinitialisation de la lumières
 	hold_light()
 	# Nouvelle tache aléatoire, obligatoirement différente de la dernière
 	var available_choices = available_tasks.filter(func(task): return task["id"] != last_completed_task_id)
@@ -237,6 +238,7 @@ func _on_slider_drag_ended(value_changed: bool, task: Dictionary):
 
 func start_order_minigame():
 	var order_minigame = get_node("OrderMinigame")
+	order_minigame_selected.emit()
 	order_minigame.mini_game_completed.connect(_on_order_minigame_completed)
 	order_minigame.reset_game()
 	
@@ -250,7 +252,6 @@ func start_order_minigame():
 func _on_order_minigame_completed(success: bool):
 	var order_minigame = get_node("OrderMinigame")
 	order_minigame.mini_game_completed.disconnect(_on_order_minigame_completed)
-	
 	if success:
 		complete_current_task()
 	else:

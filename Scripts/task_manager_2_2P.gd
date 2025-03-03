@@ -159,6 +159,7 @@ func start_random_task():
 		new_task_started.emit(task_description)
 		return
 
+
 	if current_task["id"] == "CubePlacement":
 		new_task_started.emit(current_task["description"])
 		cube_minigame_selected.emit()  

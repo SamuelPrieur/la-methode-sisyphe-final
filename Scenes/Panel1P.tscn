@@ -1581,17 +1581,19 @@ position = Vector2(392, 702)
 texture = ExtResource("104_l4er0")
 
 [node name="ButtonNitro" type="Button" parent="TaskManager"]
+z_index = 2
 anchors_preset = -1
 anchor_left = -0.0119792
 anchor_top = -0.0203704
 anchor_right = -0.0119792
 anchor_bottom = -0.0203704
-offset_left = 371.0
-offset_top = 641.0
-offset_right = 501.0
-offset_bottom = 769.0
+offset_left = 376.0
+offset_top = 644.0
+offset_right = 506.0
+offset_bottom = 772.0
 focus_mode = 0
 action_mode = 0
+icon = ExtResource("200_l4xhb")
 flat = true
 expand_icon = true
 script = ExtResource("105_nuyac")
