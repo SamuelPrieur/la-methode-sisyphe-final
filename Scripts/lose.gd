@@ -2,7 +2,6 @@ extends Node2D
 
 var score = 0
 @onready var score_label = $ScoreLabel
-@onready var explosion = $Explosion
 @onready var exit_button = $ExitButton
 
 

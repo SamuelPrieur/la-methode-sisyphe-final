@@ -12,11 +12,11 @@ func _ready():
 		3:
 			video_player.stream = load("res://Assets/Videos/Turbulences.ogv")
 		4:
-			video_player.stream = load("res://Assets/Videos/Orage.ogv")
+			video_player.stream = load("res://Assets/Videos/orage.ogv")
 		5:
 			video_player.stream = load("res://Assets/Videos/Feu.ogv")
 		6:
-			video_player.stream = load("res://Assets/Videos/Amerrissage.ogv")
+			video_player.stream = load("res://Assets/Videos/amerrissage.ogv")
 	video_player.play()
 	video_player.finished.connect(_on_video_finished)
 

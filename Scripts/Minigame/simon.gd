@@ -36,7 +36,7 @@ func _ready():
 	for i in range(1, 13):  
 		var btn = get_node("ColorButton" + str(i)) as MultiTouchButton
 		color_buttons.append(btn)
-		btn.pressed.connect(func(): _on_ColorButton_pressed(i - 1))  
+		btn.multitouch_pressed.connect(func(): _on_ColorButton_pressed(i - 1))  
 	
 	var main_game = null  
 	match Global.player_number:

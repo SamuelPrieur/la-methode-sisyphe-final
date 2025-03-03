@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://cq6qcb2l5duda"]
 
-[ext_resource type="Texture2D" uid="uid://dsy2stwx4l4s6" path="res://Assets/Slider/Nob.png" id="1_8mnsa"]
+[ext_resource type="Texture2D" uid="uid://dsy2stwx4l4s6" path="res://Assets/MiniJeux/Slider/Nob.png" id="1_8mnsa"]
 [ext_resource type="Script" path="res://addons/MultiTouchGui/MultiTouchVSlider.gd" id="1_pdi6t"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dej3h"]

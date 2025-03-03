@@ -34,8 +34,8 @@ func _ready():
 
 	# ----------------------- Connecter les boutons ----------------------- #
 
-	right_radio.pressed.connect(_on_right_radio_pressed)
-	left_radio.pressed.connect(_on_left_radio_pressed)
+	right_radio.multitouch_pressed.connect(_on_right_radio_pressed)
+	left_radio.multitouch_pressed.connect(_on_left_radio_pressed)
 	
 	# ----------------------- Connecter le slider ----------------------- #
 

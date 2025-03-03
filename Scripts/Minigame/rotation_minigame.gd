@@ -20,8 +20,8 @@ func _ready():
 	if main_game:
 		main_game.rotation_minigame_selected.connect(randomize_rotation)
 
-	bouton_right.pressed.connect(_on_rotate_right)
-	bouton_left.pressed.connect(_on_rotate_left)
+	bouton_right.multitouch_pressed.connect(_on_rotate_right)
+	bouton_left.multitouch_pressed.connect(_on_rotate_left)
 
 
 func randomize_rotation():

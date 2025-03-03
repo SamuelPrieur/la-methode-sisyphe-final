@@ -35,10 +35,10 @@ func _ready():
 	
 	# ----------------------- Connecter les boutons ----------------------- #
 
-	up_button.pressed.connect(move_up)
-	right_button.pressed.connect(move_right)
-	left_button.pressed.connect(move_left)
-	down_button.pressed.connect(move_down)
+	up_button.multitouch_pressed.connect(move_up)
+	right_button.multitouch_pressed.connect(move_right)
+	left_button.multitouch_pressed.connect(move_left)
+	down_button.multitouch_pressed.connect(move_down)
 	
 	randomize_position()
 

@@ -1,6 +1,6 @@
 extends Sprite2D
 
-@onready var task_description_label = $TaskDescription
+@onready var task_description_label = $TaskDescriptionTwo
 @onready var task_manager = $"../TaskManagerTwo"
 @onready var light_tv = $LightTV
 

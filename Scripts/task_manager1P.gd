@@ -50,32 +50,32 @@ var target_signal: String = ""
 
 var available_tasks = [
 	# Boutons
-	{"id": "Button1", "description": "Monter de vitesse", "button_node": "Button1", "time_allowed": "8"},
-	{"id": "Button2", "description": "Baisser de vitesse", "button_node": "Button2", "time_allowed": "8"},
-	{"id": "ButtonNitro", "description": "Activer la Nitro", "button_node": "ButtonNitro", "time_allowed": "8"},
-	{"id": "Ventilateur", "description": "Ventilation", "description_on": "Éteindre la ventilation", "description_off": "Allumez la ventilation", "button_node": "Ventilateur/InteractionVentilateur", "time_allowed": "8"},
-	{"id": "Alternateur", "description": "Activer l'alternateur", "button_node": "Alternateur", "time_allowed": "8"},
-	{"id": "Plasma", "description": "Activer le plasma", "button_node": "Plasma", "time_allowed": "8"},
+	{"id": "Button1", "description": "Monter de vitesse", "button_node": "Button1", "time_allowed": "12"},
+	{"id": "Button2", "description": "Baisser de vitesse", "button_node": "Button2", "time_allowed": "12"},
+	{"id": "ButtonNitro", "description": "Activer la Nitro", "button_node": "ButtonNitro", "time_allowed": "12"},
+	{"id": "Ventilateur", "description": "Ventilation", "description_on": "Éteindre la ventilation", "description_off": "Allumez la ventilation", "button_node": "Ventilateur/InteractionVentilateur", "time_allowed": "12"},
+	{"id": "Alternateur", "description": "Activer l'alternateur", "button_node": "Alternateur", "time_allowed": "12"},
+	{"id": "Plasma", "description": "Activer le plasma", "button_node": "Plasma", "time_allowed": "12"},
 
 	
 	# Sliders
-	{"id": "MultiTouchVSlider", "description": "Mettre le Slider 1 sur %d", "button_node": "Slider1", "possible_values": [0, 1, 2, 3], "time_allowed": "10"},
-	{"id": "MultiTouchVSlider", "description": "Mettre le Slider 2 sur %d", "button_node": "Slider2", "possible_values": [0, 1, 2, 3], "time_allowed": "10"},
+	{"id": "MultiTouchVSlider", "description": "Mettre le Slider rouge sur %d", "button_node": "Slider1", "possible_values": [0, 1, 2, 3], "time_allowed": "15"},
+	{"id": "MultiTouchVSlider", "description": "Mettre le Slider vert sur %d", "button_node": "Slider2", "possible_values": [0, 1, 2, 3], "time_allowed": "15"},
 	
 	# Order
-	{"id": "OrderMinigame", "description": "Appuyer sur les boutons dans l'ordre", "description_on": "Éteindre les réacteurs dans l'ordre", "description_off": "Allumez les réacteurs dans l'ordre", "button_node": "OrderMinigame", "time_allowed": "20"},
+	{"id": "OrderMinigame", "description": "Appuyer sur les boutons dans l'ordre", "description_on": "Éteindre les réacteurs dans l'ordre", "description_off": "Allumez les réacteurs dans l'ordre", "button_node": "OrderMinigame", "time_allowed": "25"},
 	
 	# Radio
-	{"id": "RadioMinigame", "description": "Mettez la radio sur la fréquence %d Hz", "button_node": "RadioMinigame", "possible_values": [300,375,450,525,600,675,750,825,900], "time_allowed": "20"},
+	{"id": "RadioMinigame", "description": "Mettez la radio sur la fréquence %d Hz", "button_node": "RadioMinigame", "possible_values": [300,375,450,525,600,675,750,825,900], "time_allowed": "25"},
 	
 	# KeyPad
 	{"id": "KeyPadMinigame", "description": "Entrez le code %s", "button_node": "KeyPad", "time_allowed": "20"},
 
 	# Cube
-	{"id": "CubePlacement", "description": "Recentrez le cube", "button_node": "CubePlacement", "time_allowed": "10"},
+	{"id": "CubePlacement", "description": "Recentrez le cube", "button_node": "CubePlacement", "time_allowed": "15"},
 
 	# Rotation
-	{"id": "RotationMinigame", "description": "Réaligner l'incidence du véhicule", "button_node": "RotationMinigame", "time_allowed": "10"},
+	{"id": "RotationMinigame", "description": "Réaligner l'incidence du véhicule", "button_node": "RotationMinigame", "time_allowed": "15"},
 
 	# Labyrinthe
 	#{"id": "Labyrinthe", "description": "Faire sortir le rat %d","niveau": ["du moteur","de l'alternateur","du pot d'échappement"], "button_node": "LabyrintheMinigame", "time_allowed": "30"},
@@ -84,7 +84,7 @@ var available_tasks = [
 	{"id": "Signal", "description": "Changer l'oscillation du signal sur ","signal": ["Mars","Lune","Brésil","Alpha","Tango","Quebec"], "button_node": "CurveMinigame", "time_allowed": "20"},
 
 	# Simon
-	{"id": "Simon", "description": "Jouer au Simon ","button_node": "Simon", "time_allowed": "20"}
+	#{"id": "Simon", "description": "Jouer au Simon ","button_node": "Simon", "time_allowed": "20"}
 ]
 
 

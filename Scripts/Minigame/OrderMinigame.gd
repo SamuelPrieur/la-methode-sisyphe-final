@@ -19,7 +19,7 @@ func _ready():
 	for i in range(1, 11):
 		var button = get_node("OrderButton%d" % i)
 		buttons.append(button)
-		button.pressed.connect(_on_button_pressed.bind(i))
+		button.multitouch_pressed.connect(_on_button_pressed.bind(i))
 	
 	reset_game()
 

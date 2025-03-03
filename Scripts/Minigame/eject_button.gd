@@ -7,7 +7,7 @@ var first_click_done = false
 
 func _ready():
 	# Connecter le signal pressed du bouton à notre fonction
-	$EjectButton.pressed.connect(_on_eject_button_pressed)
+	$EjectButton.multitouch_pressed.connect(_on_eject_button_pressed)
 
 # Fonction appelée lorsque le bouton est pressé
 func _on_eject_button_pressed():

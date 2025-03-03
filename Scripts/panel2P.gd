@@ -33,6 +33,8 @@ var animation_played = false
 # Animation de Défaite
 @onready var explosion = $Explosion
 
+@onready var vue_avion = $VueAvion
+
 # Audio
 var audio_player_validate
 var audio_player_error
@@ -49,6 +51,20 @@ var audio_files = [
 @onready var task_manager_two = $TaskManagerTwo
 
 func _ready():
+	match Global.level:
+		1:
+			vue_avion.animation = "Nuages" 
+		2:
+			vue_avion.animation = "Space"
+		3:
+			vue_avion.animation = "Nuages"
+		4:
+			vue_avion.animation = "Storm"
+		5:
+			vue_avion.animation = "Eau"
+
+	vue_avion.play()
+	
 	# ----------------------- Préparation de l'audio ----------------------- #
 	audio_player_lose = AudioStreamPlayer.new()
 	add_child(audio_player_lose)
@@ -92,8 +108,9 @@ func _ready():
 	
 	audio_player_validate.volume_db = -15
 	audio_player_error.volume_db = -15
-	
+
 # ----------------------- Animation du café ----------------------- #
+
 func start_random_animation_timer():
 	var random_time = randf_range(1, 5)
 	random_anim_timer.start(random_time)

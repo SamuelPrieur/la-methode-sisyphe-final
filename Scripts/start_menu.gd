@@ -21,6 +21,9 @@ var selected_mode = null
 func _ready():
 	Global.score = 0
 	Global.level = 1
+	
+	Global.load_leaderboard()
+	
 	_generate_next_change_time()
 
 	audio_player = AudioStreamPlayer.new()

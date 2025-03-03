@@ -13,18 +13,18 @@ const MAX_CODE_LENGTH = 4
 
 func _ready():
 	code_label.text = ""
-	$KeyPad1.pressed.connect(func(): _on_key_pad_pressed(1))
-	$KeyPad2.pressed.connect(func(): _on_key_pad_pressed(2))
-	$KeyPad3.pressed.connect(func(): _on_key_pad_pressed(3))
-	$KeyPad4.pressed.connect(func(): _on_key_pad_pressed(4))
-	$KeyPad5.pressed.connect(func(): _on_key_pad_pressed(5))
-	$KeyPad6.pressed.connect(func(): _on_key_pad_pressed(6))
-	$KeyPad7.pressed.connect(func(): _on_key_pad_pressed(7))
-	$KeyPad8.pressed.connect(func(): _on_key_pad_pressed(8))
-	$KeyPad9.pressed.connect(func(): _on_key_pad_pressed(9))
+	$KeyPad1.multitouch_pressed.connect(func(): _on_key_pad_pressed(1))
+	$KeyPad2.multitouch_pressed.connect(func(): _on_key_pad_pressed(2))
+	$KeyPad3.multitouch_pressed.connect(func(): _on_key_pad_pressed(3))
+	$KeyPad4.multitouch_pressed.connect(func(): _on_key_pad_pressed(4))
+	$KeyPad5.multitouch_pressed.connect(func(): _on_key_pad_pressed(5))
+	$KeyPad6.multitouch_pressed.connect(func(): _on_key_pad_pressed(6))
+	$KeyPad7.multitouch_pressed.connect(func(): _on_key_pad_pressed(7))
+	$KeyPad8.multitouch_pressed.connect(func(): _on_key_pad_pressed(8))
+	$KeyPad9.multitouch_pressed.connect(func(): _on_key_pad_pressed(9))
 	
-	$KeyPadErase.pressed.connect(_on_key_pad_erase_pressed)
-	$KeyPadEnter.pressed.connect(_on_key_pad_enter_pressed)
+	$KeyPadErase.multitouch_pressed.connect(_on_key_pad_erase_pressed)
+	$KeyPadEnter.multitouch_pressed.connect(_on_key_pad_enter_pressed)
 
 	print(keypad_code_generated)
 

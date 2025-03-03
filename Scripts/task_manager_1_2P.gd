@@ -57,7 +57,7 @@ var available_tasks = [
 
 	
 	# Sliders
-	{"id": "MultiTouchVSlider", "description": "Mettre le Slider 1 sur %d", "button_node": "Slider1", "possible_values": [0, 1, 2, 3], "time_allowed": "10"},
+	{"id": "MultiTouchVSlider", "description": "Mettre le Slider rouge sur %d", "button_node": "Slider1", "possible_values": [0, 1, 2, 3], "time_allowed": "10"},
 	
 	# Order
 	{"id": "OrderMinigame", "description": "Appuyer sur les boutons dans l'ordre", "description_on": "Éteindre les réacteurs dans l'ordre", "description_off": "Allumez les réacteurs dans l'ordre", "button_node": "OrderMinigame", "time_allowed": "20"},

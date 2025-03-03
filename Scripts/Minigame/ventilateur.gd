@@ -4,7 +4,7 @@ extends Node2D
 @onready var button = $InteractionVentilateur
 
 func _ready():
-	button.pressed.connect(_on_button_pressed)
+	button.multitouch_pressed.connect(_on_button_pressed)
 	update_animation()
 
 func _on_button_pressed():

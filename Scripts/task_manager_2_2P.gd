@@ -56,7 +56,7 @@ var available_tasks = [
 
 	
 	# Sliders
-	{"id": "MultiTouchVSlider", "description": "Mettre le Slider 2 sur %d", "button_node": "Slider2", "possible_values": [0, 1, 2, 3], "time_allowed": "10"},
+	{"id": "MultiTouchVSlider", "description": "Mettre le Slider vert sur %d", "button_node": "Slider2", "possible_values": [0, 1, 2, 3], "time_allowed": "10"},
 		
 	# KeyPad
 	{"id": "KeyPadMinigame", "description": "Entrez le code %s", "button_node": "KeyPad", "time_allowed": "20"},
