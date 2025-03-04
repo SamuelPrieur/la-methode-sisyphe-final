@@ -14,6 +14,7 @@ signal signal_minigame_selected
 # Audio
 var audio_player_alarm
 var audio_player_button
+var audio_music_fiesta
 
 # Progress Bar
 @onready var progress_bar = $ProgressBar
@@ -52,40 +53,40 @@ var target_signal: String = ""
 var available_tasks = [
 	# Boutons
 	{"id": "Button1", "description": "Monter de vitesse", "button_node": "Button1", "time_allowed": "12"},
-	#{"id": "Button2", "description": "Baisser de vitesse", "button_node": "Button2", "time_allowed": "12"},
-	#{"id": "ButtonNitro", "description": "Activer la Nitro", "button_node": "ButtonNitro", "time_allowed": "12"},
-	#{"id": "Ventilateur", "description": "Ventilation", "description_on": "Éteindre la ventilation", "description_off": "Allumez la ventilation", "button_node": "Ventilateur/InteractionVentilateur", "time_allowed": "12"},
-	{"id": "Alternateur", "description": "Activer l'alternateur", "button_node": "Alternateur", "time_allowed": "12"},
-	{"id": "Plasma", "description": "Activer le plasma", "button_node": "Plasma", "time_allowed": "12"},
+	{"id": "Button2", "description": "Baisser de vitesse", "button_node": "Button2", "time_allowed": "12"},
+	{"id": "ButtonNitro", "description": "Activer la Nitro", "button_node": "ButtonNitro", "time_allowed": "12"},
+	{"id": "Ventilateur", "description": "Ventilation", "description_on": "Éteindre la ventilation", "description_off": "Allumez la ventilation", "button_node": "Ventilateur/InteractionVentilateur", "time_allowed": "12"},
+	{"id": "Alternateur", "description": "Activer l'alternateur", "description_on": "Désactiver l'alternateur", "description_off": "Activer l'alternateur", "button_node": "Alternateur", "time_allowed": "12"},
+	{"id": "Plasma", "description": "Activer le plasma", "description_on": "Désactiver le plasma", "description_off": "Activer le plasma", "button_node": "Plasma", "time_allowed": "12"},
 
 	
 	# Sliders
-	#{"id": "MultiTouchVSlider", "description": "Mettre le Slider rouge sur %d", "button_node": "Slider1", "possible_values": [0, 1, 2, 3], "time_allowed": "15"},
-	#{"id": "MultiTouchVSlider", "description": "Mettre le Slider vert sur %d", "button_node": "Slider2", "possible_values": [0, 1, 2, 3], "time_allowed": "15"},
+	{"id": "MultiTouchVSlider", "description": "Mettre le Slider rouge sur %d", "button_node": "Slider1", "possible_values": [0, 1, 2, 3], "time_allowed": "15"},
+	{"id": "MultiTouchVSlider", "description": "Mettre le Slider vert sur %d", "button_node": "Slider2", "possible_values": [0, 1, 2, 3], "time_allowed": "15"},
 	
 	# Order
-	#{"id": "OrderMinigame", "description": "Appuyer sur les boutons dans l'ordre", "description_on": "Éteindre les réacteurs dans l'ordre", "description_off": "Allumez les réacteurs dans l'ordre", "button_node": "OrderMinigame", "time_allowed": "25"},
+	{"id": "OrderMinigame", "description": "Appuyer sur les boutons dans l'ordre", "description_on": "Éteindre les réacteurs dans l'ordre", "description_off": "Allumez les réacteurs dans l'ordre", "button_node": "OrderMinigame", "time_allowed": "25"},
 	
 	# Radio
-	#{"id": "RadioMinigame", "description": "Mettez la radio sur la fréquence %d Hz", "button_node": "RadioMinigame", "possible_values": [300,375,450,525,600,675,750,825,900], "time_allowed": "25"},
+	{"id": "RadioMinigame", "description": "Mettez la radio sur la fréquence %d Hz", "button_node": "RadioMinigame", "possible_values": [300,375,450,525,600,675,750,825,900], "time_allowed": "25"},
 	
 	# KeyPad
-	#{"id": "KeyPadMinigame", "description": "Entrez le code %s", "button_node": "KeyPad", "time_allowed": "20"},
+	{"id": "KeyPadMinigame", "description": "Entrez le code %s", "button_node": "KeyPad", "time_allowed": "20"},
 
 	# Cube
-	#{"id": "CubePlacement", "description": "Recentrez le cube", "button_node": "CubePlacement", "time_allowed": "15"},
+	{"id": "CubePlacement", "description": "Recentrez le cube", "button_node": "CubePlacement", "time_allowed": "15"},
 
 	# Rotation
-	#{"id": "RotationMinigame", "description": "Réaligner l'incidence du véhicule", "button_node": "RotationMinigame", "time_allowed": "15"},
+	{"id": "RotationMinigame", "description": "Réaligner l'incidence du véhicule", "button_node": "RotationMinigame", "time_allowed": "15"},
 
 	# Labyrinthe
 	#{"id": "Labyrinthe", "description": "Faire sortir le rat %d","niveau": ["du moteur","de l'alternateur","du pot d'échappement"], "button_node": "LabyrintheMinigame", "time_allowed": "30"},
 
 	# Signal
-	#{"id": "Signal", "description": "Changer l'oscillation du signal sur ","signal": ["Mars","Lune","Brésil","Alpha","Tango","Quebec"], "button_node": "CurveMinigame", "time_allowed": "20"},
+	{"id": "Signal", "description": "Changer l'oscillation du signal sur ","signal": ["Mars","Lune","Brésil","Alpha","Tango","Quebec"], "button_node": "CurveMinigame", "time_allowed": "20"},
 
 	# Simon
-	#{"id": "Simon", "description": "Jouer au Simon ","button_node": "Simon", "time_allowed": "20"}
+	{"id": "Simon", "description": "Jouer au Simon ","button_node": "Simon", "time_allowed": "20"}
 ]
 
 
@@ -94,12 +95,15 @@ func _ready():
 	# ----------------------- Préparation de l'audio ----------------------- #
 	audio_player_alarm = AudioStreamPlayer.new()
 	audio_player_button = AudioStreamPlayer.new()
+	audio_music_fiesta = AudioStreamPlayer.new()
 
 	add_child(audio_player_alarm)
 	add_child(audio_player_button)
+	add_child(audio_music_fiesta)
 
 	audio_player_alarm.stream = load("res://Assets/Audio/Event/Alarm.wav")
 	audio_player_button.stream = load("res://Assets/Audio/Action/Button.wav")
+	audio_music_fiesta.stream = load("res://Assets/Audio/Ambiant/BoogieFiesta.wav")
 
 	audio_player_alarm.volume_db = -15
 	audio_player_button.volume_db = -15
@@ -108,8 +112,9 @@ func _ready():
 
 	for task in available_tasks:
 		var node = get_node(task["button_node"])
-		if node is MultiTouchButton:
+		if node is MultiTouchButton or node is MultiTouchLevierPlasma or node is MultiTouchLevierAlternateur:
 			node.pressed.connect(_on_button_pressed.bind(task["id"]))
+		
 		elif task["id"] == "Ventilateur":
 			node.pressed.connect(_on_button_pressed.bind(task["id"]))
 		elif task["id"] == "OrderMinigame" :
@@ -173,6 +178,30 @@ func start_random_task():
 
 		if "description_on" in current_task and "description_off" in current_task:
 			if Global.ventilateur == "on":
+				task_description = current_task["description_on"]
+			else:
+				task_description = current_task["description_off"]
+
+		new_task_started.emit(task_description)
+		return
+
+	if current_task["id"] == "Alternateur":
+		var task_description = current_task["description"]
+
+		if "description_on" in current_task and "description_off" in current_task:
+			if Global.alternateur == "on":
+				task_description = current_task["description_on"]
+			else:
+				task_description = current_task["description_off"]
+
+		new_task_started.emit(task_description)
+		return
+
+	if current_task["id"] == "Plasma":
+		var task_description = current_task["description"]
+
+		if "description_on" in current_task and "description_off" in current_task:
+			if Global.plasma == "on":
 				task_description = current_task["description_on"]
 			else:
 				task_description = current_task["description_off"]
@@ -284,12 +313,21 @@ func _process(delta):
 		$BouleDiscoLight.color = Color.from_hsv(disco_light_hue, 1, 1)
 
 		$BouleDisco.position.y = lerp($BouleDisco.position.y, default_y, delta * 5)
+
+		if not audio_music_fiesta.playing:
+			audio_music_fiesta.play()
+		audio_music_fiesta.volume_db = lerp(audio_music_fiesta.volume_db, -15.0, delta * 2) 
+
 	else:
 		$Ombre.energy = lerp($Ombre.energy, 0.1, delta * 2)
 
 		$BouleDiscoLight.energy = lerp($BouleDiscoLight.energy, 0.0, delta * 3)
 
 		$BouleDisco.position.y = lerp($BouleDisco.position.y, target_y, delta * 5)
+
+		audio_music_fiesta.volume_db = lerp(audio_music_fiesta.volume_db, -40.0, delta * 2) 
+		if audio_music_fiesta.volume_db <= -39.0:  
+			audio_music_fiesta.stop()
 
 
 	if shake_timer > 0:

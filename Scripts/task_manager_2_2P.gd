@@ -13,6 +13,7 @@ signal signal_minigame_selected
 # Audio
 var audio_player_alarm
 var audio_player_button
+var audio_music_fiesta
 
 # Progress Bar
 @onready var progress_bar = $ProgressBar
@@ -71,7 +72,7 @@ var available_tasks = [
 	#{"id": "Labyrinthe", "description": "Faire sortir le rat %d","niveau": ["du moteur","de l'alternateur","du pot d'échappement"], "button_node": "LabyrintheMinigame", "time_allowed": "30"},
 
 	# Simon
-	{"id": "Simon", "description": "Jouer au Simon ","button_node": "Simon", "time_allowed": "20"}
+	{"id": "Simon", "description": "Jouer au Simon","button_node": "Simon", "time_allowed": "20"}
 ]
 
 
@@ -80,12 +81,15 @@ func _ready():
 	# ----------------------- Préparation de l'audio ----------------------- #
 	audio_player_alarm = AudioStreamPlayer.new()
 	audio_player_button = AudioStreamPlayer.new()
+	audio_music_fiesta = AudioStreamPlayer.new()
 
 	add_child(audio_player_alarm)
 	add_child(audio_player_button)
+	add_child(audio_music_fiesta)
 
 	audio_player_alarm.stream = load("res://Assets/Audio/Event/Alarm.wav")
 	audio_player_button.stream = load("res://Assets/Audio/Action/Button.wav")
+	audio_music_fiesta.stream = load("res://Assets/Audio/Ambiant/BoogieFiesta.wav")
 
 	audio_player_alarm.volume_db = -15
 	audio_player_button.volume_db = -15
@@ -94,7 +98,7 @@ func _ready():
 
 	for task in available_tasks:
 		var node = get_node(task["button_node"])
-		if node is MultiTouchButton:
+		if node is MultiTouchButton or node is MultiTouchLevierPlasma or node is MultiTouchLevierAlternateur:
 			node.pressed.connect(_on_button_pressed.bind(task["id"]))
 		elif task["id"] == "Ventilateur":
 			node.pressed.connect(_on_button_pressed.bind(task["id"]))
@@ -158,7 +162,6 @@ func start_random_task():
 
 		new_task_started.emit(task_description)
 		return
-
 
 	if current_task["id"] == "CubePlacement":
 		new_task_started.emit(current_task["description"])
@@ -234,12 +237,21 @@ func _process(delta):
 		$BouleDiscoLight.color = Color.from_hsv(disco_light_hue, 1, 1)
 
 		$BouleDisco.position.y = lerp($BouleDisco.position.y, default_y, delta * 5)
+
+		if not audio_music_fiesta.playing:
+			audio_music_fiesta.play()
+		audio_music_fiesta.volume_db = lerp(audio_music_fiesta.volume_db, -15.0, delta * 2) 
+
 	else:
 		$Ombre.energy = lerp($Ombre.energy, 0.1, delta * 2)
 
 		$BouleDiscoLight.energy = lerp($BouleDiscoLight.energy, 0.0, delta * 3)
 
 		$BouleDisco.position.y = lerp($BouleDisco.position.y, target_y, delta * 5)
+
+		audio_music_fiesta.volume_db = lerp(audio_music_fiesta.volume_db, -40.0, delta * 2) 
+		if audio_music_fiesta.volume_db <= -39.0:  
+			audio_music_fiesta.stop()
 
 
 	if shake_timer > 0:

@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3 uid="uid://c1d2qqm8ad7ne"]
+
+[ext_resource type="Texture2D" uid="uid://mavmvvfapuv3" path="res://Assets/Cafard/cafardAssets/tache_sang.png" id="1_ofpld"]
+[ext_resource type="Texture2D" uid="uid://bgbmu8l3q8v84" path="res://Assets/Cafard/cafardAssets/Cafard1.png" id="2_7i4ud"]
+[ext_resource type="Texture2D" uid="uid://b2d12dxjqhuys" path="res://Assets/Cafard/cafardAssets/Cafard2.png" id="3_qbv36"]
+[ext_resource type="Texture2D" uid="uid://s3g53xlrx0qh" path="res://Assets/Cafard/cafardAssets/Cafard3.png" id="4_sbxgh"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iryo2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ofpld")
+}],
+"loop": true,
+"name": &"dead",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_7i4ud")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_qbv36")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_7i4ud")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_sbxgh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_suplt"]
+size = Vector2(128, 72)
+
+[node name="Cafard" type="CharacterBody2D"]
+z_index = 8
+position = Vector2(790, 343)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_iryo2")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_suplt")

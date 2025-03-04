@@ -33,7 +33,12 @@ var animation_played = false
 # Animation de Défaite
 @onready var explosion = $Explosion
 
+# Extérieur
 @onready var vue_avion = $VueAvion
+
+# Cafard
+@onready var cafard = $Cafard
+var cafard_velocity = Vector2(200, 150)
 
 # Audio
 var audio_player_validate
@@ -54,7 +59,7 @@ func _ready():
 		2:
 			vue_avion.animation = "Space"
 		3:
-			vue_avion.animation = "Nuages"
+			vue_avion.animation = "Montagne"
 		4:
 			vue_avion.animation = "Storm"
 		5:
@@ -124,6 +129,22 @@ func play_animations():
 # ----------------------- Animation de l'alarme ----------------------- #
 
 func _process(delta):
+	
+	# Cafard
+	cafard.position += cafard_velocity * delta
+	
+	cafard.rotation = cafard_velocity.angle()
+	
+	var screen_rect = get_viewport_rect()
+	var cafard_size = cafard.get_sprite_frames().get_frame_texture(cafard.animation, 0).get_size()
+	
+	if cafard.position.x <= 0 or cafard.position.x + cafard_size.x >= screen_rect.size.x:
+		cafard_velocity.x *= -1  
+	
+	if cafard.position.y <= 0 or cafard.position.y + cafard_size.y >= screen_rect.size.y:
+		cafard_velocity.y *= -1
+
+	
 	var time_left = int(timer.time_left)
 	var minutes = time_left / 60
 	var seconds = time_left % 60

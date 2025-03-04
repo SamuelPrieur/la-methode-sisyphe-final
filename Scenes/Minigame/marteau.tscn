@@ -1,0 +1,58 @@
+[gd_scene load_steps=8 format=3 uid="uid://d0fa5hgflpt10"]
+
+[ext_resource type="Texture2D" uid="uid://dhdvkahgxe4cf" path="res://Assets/Cafard/marteauAssets/marteau_4.png" id="1_6yvpr"]
+[ext_resource type="Script" path="res://Scripts/Minigame/marteau.gd" id="1_g4mqy"]
+[ext_resource type="Texture2D" uid="uid://dg8wq78uop3iw" path="res://Assets/Cafard/marteauAssets/marteau_3.png" id="2_tj40d"]
+[ext_resource type="Texture2D" uid="uid://ih3hfgpiekjs" path="res://Assets/Cafard/marteauAssets/marteau_2.png" id="3_y7r8i"]
+[ext_resource type="Texture2D" uid="uid://6t7gs01vxycs" path="res://Assets/Cafard/marteauAssets/marteau_1.png" id="4_cixqf"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tt4vq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_6yvpr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_tj40d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_y7r8i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_cixqf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_cixqf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_y7r8i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_tj40d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_6yvpr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_6yvpr")
+}],
+"loop": true,
+"name": &"default",
+"speed": 25.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rdjgc"]
+radius = 54.1479
+
+[node name="AnimatedMarteau" type="Area2D"]
+script = ExtResource("1_g4mqy")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_tt4vq")
+autoplay = "default"
+frame = 2
+frame_progress = 0.179792
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-8, -30)
+shape = SubResource("CircleShape2D_rdjgc")

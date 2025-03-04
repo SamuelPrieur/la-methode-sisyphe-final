@@ -53,8 +53,8 @@ var available_tasks = [
 	# Boutons
 	{"id": "Button1", "description": "Monter de vitesse", "button_node": "Button1", "time_allowed": "8"},
 	{"id": "Button2", "description": "Baisser de vitesse", "button_node": "Button2", "time_allowed": "8"},
-	{"id": "Alternateur", "description": "Activer l'alternateur", "button_node": "Alternateur", "time_allowed": "8"},
-	{"id": "Plasma", "description": "Activer le plasma", "button_node": "Plasma", "time_allowed": "8"},
+	{"id": "Alternateur", "description": "Activer l'alternateur", "description_on": "Désactiver l'alternateur", "description_off": "Activer l'alternateur", "button_node": "Alternateur", "time_allowed": "8"},
+	{"id": "Plasma", "description": "Activer le plasma", "description_on": "Désactiver le plasma", "description_off": "Activer le plasma", "button_node": "Plasma", "time_allowed": "8"},
 
 	
 	# Sliders
@@ -91,7 +91,7 @@ func _ready():
 
 	for task in available_tasks:
 		var node = get_node(task["button_node"])
-		if node is MultiTouchButton:
+		if node is MultiTouchButton or node is MultiTouchLevierPlasma or node is MultiTouchLevierAlternateur:
 			node.pressed.connect(_on_button_pressed.bind(task["id"]))
 		elif task["id"] == "OrderMinigame" :
 			continue
@@ -157,6 +157,29 @@ func start_random_task():
 		start_signal_minigame()
 		return
 
+	if current_task["id"] == "Alternateur":
+		var task_description = current_task["description"]
+
+		if "description_on" in current_task and "description_off" in current_task:
+			if Global.alternateur == "on":
+				task_description = current_task["description_on"]
+			else:
+				task_description = current_task["description_off"]
+
+		new_task_started.emit(task_description)
+		return
+
+	if current_task["id"] == "Plasma":
+		var task_description = current_task["description"]
+
+		if "description_on" in current_task and "description_off" in current_task:
+			if Global.plasma == "on":
+				task_description = current_task["description_on"]
+			else:
+				task_description = current_task["description_off"]
+
+		new_task_started.emit(task_description)
+		return
 	
 	# Si c'est un slider :
 	if "possible_values" in current_task:
@@ -199,7 +222,6 @@ func shake_screen(intensity: float, duration: float):
 
 
 func _process(delta):
-
 	if shake_timer > 0:
 		shake_timer -= delta
 		if shake_timer <= 0:

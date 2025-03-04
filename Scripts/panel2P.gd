@@ -57,7 +57,7 @@ func _ready():
 		2:
 			vue_avion.animation = "Space"
 		3:
-			vue_avion.animation = "Nuages"
+			vue_avion.animation = "Montagne"
 		4:
 			vue_avion.animation = "Storm"
 		5:

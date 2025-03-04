@@ -1,359 +1,479 @@
-[gd_scene load_steps=372 format=3 uid="uid://bvo6rsafbq2gn"]
+[gd_scene load_steps=494 format=3 uid="uid://bvo6rsafbq2gn"]
 
 [ext_resource type="PackedScene" uid="uid://v0fnarppwdp3" path="res://Scenes/Minigame/Button.tscn" id="1_4j8su"]
 [ext_resource type="Script" path="res://Scripts/panel2P.gd" id="1_mht4p"]
-[ext_resource type="Texture2D" uid="uid://dwf72cl1cp3ge" path="res://Assets/Ext_Cockpit/Eau/Eau00.png" id="2_l3w0a"]
-[ext_resource type="Texture2D" uid="uid://cnw71owx8kpiv" path="res://Assets/Ext_Cockpit/Eau/Eau01.png" id="3_6ubdi"]
+[ext_resource type="Texture2D" uid="uid://dk0uui6ik5u1s" path="res://Assets/Ext_Cockpit/Eau/Eau000.png" id="2_lvh17"]
+[ext_resource type="Texture2D" uid="uid://cibnf6ght8x2m" path="res://Assets/Ext_Cockpit/Eau/Eau001.png" id="3_yk438"]
 [ext_resource type="PackedScene" uid="uid://cq6qcb2l5duda" path="res://Scenes/Minigame/VerticalSlider.tscn" id="4_1w408"]
-[ext_resource type="Texture2D" uid="uid://bo3tfx0a75y7d" path="res://Assets/Ext_Cockpit/Eau/Eau02.png" id="4_a0lqk"]
-[ext_resource type="Texture2D" uid="uid://hona4d2xarbr" path="res://Assets/Ext_Cockpit/Eau/Eau03.png" id="5_3f7dd"]
+[ext_resource type="Texture2D" uid="uid://d2hxuff80k6tr" path="res://Assets/Ext_Cockpit/Eau/Eau002.png" id="4_peo8u"]
+[ext_resource type="Texture2D" uid="uid://ppbf6w8gxmib" path="res://Assets/Ext_Cockpit/Eau/Eau003.png" id="5_q56gs"]
 [ext_resource type="FontFile" uid="uid://rjmbgq66tgvi" path="res://Assets/Font/OTBulbClassic-200.otf" id="6_8yd1w"]
-[ext_resource type="Texture2D" uid="uid://cjsa31iw03sl5" path="res://Assets/Ext_Cockpit/Eau/Eau04.png" id="6_11l3u"]
 [ext_resource type="PackedScene" uid="uid://b2sp4q3o28mfs" path="res://Scenes/TV.tscn" id="6_hjq2f"]
-[ext_resource type="Texture2D" uid="uid://ryfcn5faret" path="res://Assets/Ext_Cockpit/Eau/Eau05.png" id="7_ylbkw"]
+[ext_resource type="Texture2D" uid="uid://b2u2ovh60iwt7" path="res://Assets/Ext_Cockpit/Eau/Eau004.png" id="6_tgfj5"]
+[ext_resource type="Texture2D" uid="uid://c1o8qyeok61o" path="res://Assets/Ext_Cockpit/Eau/Eau005.png" id="7_6smwc"]
+[ext_resource type="Texture2D" uid="uid://hycqeabaoe1h" path="res://Assets/Ext_Cockpit/Eau/Eau006.png" id="8_cduog"]
 [ext_resource type="PackedScene" uid="uid://17cf7ihimd4o" path="res://Scenes/Minigame/Order.tscn" id="8_swf1g"]
-[ext_resource type="Texture2D" uid="uid://cnmsg74bic56u" path="res://Assets/Ext_Cockpit/Eau/Eau06.png" id="8_vfk3b"]
-[ext_resource type="Texture2D" uid="uid://d4n100jugdr35" path="res://Assets/Ext_Cockpit/Eau/Eau07.png" id="9_6mirr"]
 [ext_resource type="PackedScene" uid="uid://bjqhoi2yq7ui" path="res://Scenes/ErrorCounter.tscn" id="9_i3tvs"]
-[ext_resource type="Texture2D" uid="uid://cjbioksn2rbb5" path="res://Assets/Ext_Cockpit/Eau/Eau08.png" id="10_g44y0"]
+[ext_resource type="Texture2D" uid="uid://drdpbp7ue5xh3" path="res://Assets/Ext_Cockpit/Eau/Eau007.png" id="9_jkb47"]
+[ext_resource type="Texture2D" uid="uid://i2y4sys8nf6l" path="res://Assets/Ext_Cockpit/Eau/Eau008.png" id="10_btygm"]
 [ext_resource type="PackedScene" uid="uid://doo45nhquufam" path="res://Scenes/Minigame/Radio.tscn" id="10_ldide"]
-[ext_resource type="Texture2D" uid="uid://ckg8dclwpav3j" path="res://Assets/Ext_Cockpit/Eau/Eau09.png" id="11_bkn8y"]
 [ext_resource type="Texture2D" uid="uid://b2q46woy6841c" path="res://Assets/Ext_Cockpit/Space/Composition 1_00024.png" id="11_xs5tw"]
-[ext_resource type="Texture2D" uid="uid://dt1t1v1twvwn8" path="res://Assets/Ext_Cockpit/Eau/Eau10.png" id="12_ai303"]
+[ext_resource type="Texture2D" uid="uid://b816qst0kcpih" path="res://Assets/Ext_Cockpit/Eau/Eau009.png" id="11_ycbkt"]
+[ext_resource type="Texture2D" uid="uid://diu382qpy6ua8" path="res://Assets/Ext_Cockpit/Eau/Eau010.png" id="12_lx0vq"]
 [ext_resource type="Texture2D" uid="uid://cp2jmwmf1cbwq" path="res://Assets/Ext_Cockpit/Space/Composition 1_00025.png" id="12_r0iny"]
-[ext_resource type="Texture2D" uid="uid://36hmgavry6nn" path="res://Assets/Ext_Cockpit/Eau/Eau11.png" id="13_1680c"]
+[ext_resource type="Texture2D" uid="uid://c2o4vnh5q8ywb" path="res://Assets/Ext_Cockpit/Eau/Eau011.png" id="13_dnchy"]
 [ext_resource type="Texture2D" uid="uid://slwcopqs6jd3" path="res://Assets/Ext_Cockpit/Space/Composition 1_00026.png" id="13_pito7"]
-[ext_resource type="Texture2D" uid="uid://ulqhs6e17xvv" path="res://Assets/Ext_Cockpit/Eau/Eau12.png" id="14_8ohwu"]
+[ext_resource type="Texture2D" uid="uid://cawj66tsykqtu" path="res://Assets/Ext_Cockpit/Eau/Eau012.png" id="14_gn0mi"]
 [ext_resource type="Texture2D" uid="uid://dv0xg2gy3mnbb" path="res://Assets/Ext_Cockpit/Space/Composition 1_00027.png" id="14_xpsvk"]
-[ext_resource type="Texture2D" uid="uid://ca2s3kid37m4b" path="res://Assets/Ext_Cockpit/Eau/Eau13.png" id="15_im88j"]
+[ext_resource type="Texture2D" uid="uid://x0bhen1x2bc8" path="res://Assets/Ext_Cockpit/Eau/Eau013.png" id="15_4p7kd"]
 [ext_resource type="Texture2D" uid="uid://bdcd42kfhaxue" path="res://Assets/Ext_Cockpit/Space/Composition 1_00028.png" id="15_r75t5"]
-[ext_resource type="Texture2D" uid="uid://b1avec0sgie2l" path="res://Assets/Ext_Cockpit/Eau/Eau14.png" id="16_cmx1l"]
 [ext_resource type="Texture2D" uid="uid://c3p77x3jcg2ht" path="res://Assets/Ext_Cockpit/Space/Composition 1_00029.png" id="16_nr51j"]
+[ext_resource type="Texture2D" uid="uid://nco2t1i70t7d" path="res://Assets/Ext_Cockpit/Eau/Eau014.png" id="16_vi8tu"]
 [ext_resource type="Texture2D" uid="uid://062tfmiudddt" path="res://Assets/Ext_Cockpit/Space/Composition 1_00030.png" id="17_es17d"]
 [ext_resource type="Texture2D" uid="uid://c4ys1oasngnef" path="res://Assets/Light/LightError.png" id="17_rk03b"]
+[ext_resource type="Texture2D" uid="uid://biv61l5hayw2g" path="res://Assets/Ext_Cockpit/Eau/Eau015.png" id="17_w7cfm"]
 [ext_resource type="Texture2D" uid="uid://dcio18pe76hn" path="res://Assets/Light/Frames/1.png" id="17_xg0gi"]
-[ext_resource type="Texture2D" uid="uid://cipt0kkiqxf2f" path="res://Assets/Ext_Cockpit/Eau/Eau15.png" id="17_y1qqa"]
+[ext_resource type="Texture2D" uid="uid://dkikrtq64m4pa" path="res://Assets/Ext_Cockpit/Eau/Eau016.png" id="18_7qqj2"]
 [ext_resource type="Texture2D" uid="uid://cf5larqg2ts1" path="res://Assets/Light/Frames/2.png" id="18_35ekg"]
 [ext_resource type="Texture2D" uid="uid://cyusle1fn5er6" path="res://Assets/Ext_Cockpit/Space/Composition 1_00031.png" id="18_wk6p5"]
-[ext_resource type="Texture2D" uid="uid://ca2lktvlvj2me" path="res://Assets/Ext_Cockpit/Eau/Eau16.png" id="18_wx37f"]
 [ext_resource type="Texture2D" uid="uid://b45xq37oqrnns" path="res://Assets/Ext_Cockpit/Space/Composition 1_00032.png" id="19_0t50y"]
-[ext_resource type="Texture2D" uid="uid://6qpt105xx5ht" path="res://Assets/Ext_Cockpit/Eau/Eau17.png" id="19_a345t"]
 [ext_resource type="Texture2D" uid="uid://bh8plww38hfa5" path="res://Assets/Light/Frames/3.png" id="19_ne80p"]
+[ext_resource type="Texture2D" uid="uid://qfexu71x3cti" path="res://Assets/Ext_Cockpit/Eau/Eau017.png" id="19_sc053"]
 [ext_resource type="Texture2D" uid="uid://dr06hvwcm7jv0" path="res://Assets/Light/Frames/4.png" id="20_468kd"]
+[ext_resource type="Texture2D" uid="uid://cdn5m7r5dciiw" path="res://Assets/Ext_Cockpit/Eau/Eau018.png" id="20_a7x0q"]
 [ext_resource type="Texture2D" uid="uid://bp0kb506bltx1" path="res://Assets/Ext_Cockpit/Space/Composition 1_00033.png" id="20_mcwme"]
-[ext_resource type="Texture2D" uid="uid://cwyd2odmcpnpx" path="res://Assets/Ext_Cockpit/Eau/Eau18.png" id="20_nqjrm"]
-[ext_resource type="Texture2D" uid="uid://cslt4yh6uqern" path="res://Assets/Ext_Cockpit/Eau/Eau19.png" id="21_th4uv"]
+[ext_resource type="Texture2D" uid="uid://c87d4rnwyy5i" path="res://Assets/Ext_Cockpit/Eau/Eau019.png" id="21_bqv4p"]
 [ext_resource type="Texture2D" uid="uid://c0564dt82fatv" path="res://Assets/Light/Frames/5.png" id="21_ujf8m"]
 [ext_resource type="Texture2D" uid="uid://2h04ghntli8e" path="res://Assets/Ext_Cockpit/Space/Composition 1_00034.png" id="21_v3015"]
-[ext_resource type="Texture2D" uid="uid://dkpxrnik2kypy" path="res://Assets/Ext_Cockpit/Eau/Eau20.png" id="22_sgejg"]
+[ext_resource type="Texture2D" uid="uid://5wadcqhai4pg" path="res://Assets/Ext_Cockpit/Eau/Eau020.png" id="22_a4u4k"]
 [ext_resource type="Texture2D" uid="uid://dm0y1kt7bohj3" path="res://Assets/Ext_Cockpit/Space/Composition 1_00035.png" id="22_wvwtu"]
 [ext_resource type="Texture2D" uid="uid://cjlcrrnbkpgx3" path="res://Assets/Light/Frames/6.png" id="22_xb80o"]
 [ext_resource type="Texture2D" uid="uid://chfm5i1b1ot3c" path="res://Assets/Light/Frames/7.png" id="23_cvfl3"]
-[ext_resource type="Texture2D" uid="uid://bwwfbq1fsjuya" path="res://Assets/Ext_Cockpit/Eau/Eau21.png" id="23_n41y4"]
+[ext_resource type="Texture2D" uid="uid://cyojn3r5nfjv7" path="res://Assets/Ext_Cockpit/Eau/Eau021.png" id="23_l7lfp"]
 [ext_resource type="Texture2D" uid="uid://01r3c8pjt4gv" path="res://Assets/Ext_Cockpit/Space/Composition 1_00036.png" id="23_nq0fk"]
-[ext_resource type="Texture2D" uid="uid://ccalqqiyevwd2" path="res://Assets/Ext_Cockpit/Eau/Eau22.png" id="24_uxii8"]
+[ext_resource type="Texture2D" uid="uid://dot17rdumdrg4" path="res://Assets/Ext_Cockpit/Eau/Eau022.png" id="24_6i71j"]
 [ext_resource type="Texture2D" uid="uid://dbbi4pvnwhamw" path="res://Assets/Light/Frames/8.png" id="24_wjg35"]
 [ext_resource type="Texture2D" uid="uid://2jo8bpssxyff" path="res://Assets/Light/Frames/9.png" id="25_1m1k5"]
-[ext_resource type="Texture2D" uid="uid://cvjjlmos26ogn" path="res://Assets/Ext_Cockpit/Eau/Eau23.png" id="25_4gs7k"]
-[ext_resource type="Texture2D" uid="uid://dw6s6xvebv6tp" path="res://Assets/Ext_Cockpit/Eau/Eau24.png" id="26_8jfj0"]
+[ext_resource type="Texture2D" uid="uid://cgnnh3bide4jg" path="res://Assets/Ext_Cockpit/Eau/Eau023.png" id="25_tywag"]
+[ext_resource type="Texture2D" uid="uid://cyo8mhmyph07y" path="res://Assets/Ext_Cockpit/Eau/Eau024.png" id="26_6n7nu"]
 [ext_resource type="Texture2D" uid="uid://dt8qie1ylls6r" path="res://Assets/Light/Frames/10.png" id="26_f84qn"]
-[ext_resource type="Texture2D" uid="uid://d4e2ib31t0nsp" path="res://Assets/Ext_Cockpit/Eau/Eau25.png" id="27_vgrk8"]
-[ext_resource type="Texture2D" uid="uid://dv10jd1gg0in8" path="res://Assets/Ext_Cockpit/Eau/Eau26.png" id="28_1qbcy"]
+[ext_resource type="Texture2D" uid="uid://cyrtg88nignoy" path="res://Assets/Ext_Cockpit/Eau/Eau025.png" id="27_i860w"]
+[ext_resource type="Texture2D" uid="uid://c2ee5ndmmyh0p" path="res://Assets/Ext_Cockpit/Eau/Eau026.png" id="28_b2dy8"]
+[ext_resource type="Texture2D" uid="uid://dnav3rlbb84g0" path="res://Assets/Ext_Cockpit/Eau/Eau027.png" id="29_mosin"]
 [ext_resource type="Texture2D" uid="uid://buvgrxbk8tdos" path="res://Assets/Jauge/jauge_bg.png" id="29_qyncq"]
-[ext_resource type="Texture2D" uid="uid://cenbmn8wmf1ad" path="res://Assets/Ext_Cockpit/Eau/Eau27.png" id="29_rpj8l"]
 [ext_resource type="Texture2D" uid="uid://dxbh7lolovkvv" path="res://Assets/MiniJeux/Slider/slider 2.png" id="29_sj4mr"]
 [ext_resource type="Texture2D" uid="uid://o7iw065kohrl" path="res://Assets/Jauge/jauge_vitre.png" id="30_l7ty0"]
-[ext_resource type="Texture2D" uid="uid://cv6vnl8ho6ikf" path="res://Assets/Ext_Cockpit/Eau/Eau28.png" id="30_urkyh"]
-[ext_resource type="Texture2D" uid="uid://ceslld3dm5nc3" path="res://Assets/Ext_Cockpit/Eau/Eau29.png" id="31_84k00"]
-[ext_resource type="Texture2D" uid="uid://cefxqghyqsba5" path="res://Assets/Ext_Cockpit/Eau/Eau30.png" id="32_0tw1l"]
-[ext_resource type="Texture2D" uid="uid://drrg88rrp2bti" path="res://Assets/Ext_Cockpit/Eau/Eau31.png" id="33_5u4ky"]
-[ext_resource type="Texture2D" uid="uid://bp2dwrkw6rtle" path="res://Assets/Ext_Cockpit/Eau/Eau32.png" id="34_w1dnv"]
+[ext_resource type="Texture2D" uid="uid://dpl7tu0c2vdmq" path="res://Assets/Ext_Cockpit/Eau/Eau028.png" id="30_umeem"]
+[ext_resource type="Texture2D" uid="uid://bwdodd580qco5" path="res://Assets/Ext_Cockpit/Eau/Eau029.png" id="31_7id2l"]
+[ext_resource type="Texture2D" uid="uid://bqylg1jcmf6q2" path="res://Assets/Ext_Cockpit/Eau/Eau030.png" id="32_q5xhs"]
+[ext_resource type="Texture2D" uid="uid://b0us4m14dvx4k" path="res://Assets/Ext_Cockpit/Eau/Eau031.png" id="33_i0q4n"]
+[ext_resource type="Texture2D" uid="uid://df8cw3wvaywfh" path="res://Assets/Ext_Cockpit/Eau/Eau032.png" id="34_ke6tn"]
 [ext_resource type="Texture2D" uid="uid://itjay38h6muj" path="res://Assets/timer.png" id="35_bhaxy"]
-[ext_resource type="Texture2D" uid="uid://bdissj4la3xeh" path="res://Assets/Ext_Cockpit/Eau/Eau33.png" id="35_m5nsa"]
-[ext_resource type="Texture2D" uid="uid://chupt5mhlmfqm" path="res://Assets/Ext_Cockpit/Eau/Eau34.png" id="36_fjs8b"]
+[ext_resource type="Texture2D" uid="uid://bg6g0qqa78h6f" path="res://Assets/Ext_Cockpit/Eau/Eau033.png" id="35_hw8j1"]
+[ext_resource type="Texture2D" uid="uid://edim2bfoja8f" path="res://Assets/Ext_Cockpit/Eau/Eau034.png" id="36_7k0w4"]
 [ext_resource type="PackedScene" uid="uid://pnrwxqocbnb" path="res://Scenes/cafe.tscn" id="36_mf1ra"]
-[ext_resource type="Texture2D" uid="uid://backaif8yd7f" path="res://Assets/Ext_Cockpit/Eau/Eau35.png" id="37_wkmwj"]
-[ext_resource type="Texture2D" uid="uid://dx1n63sa86qas" path="res://Assets/Ext_Cockpit/Eau/Eau36.png" id="38_fu67a"]
+[ext_resource type="Texture2D" uid="uid://dwq6lkdp580q5" path="res://Assets/Ext_Cockpit/Eau/Eau035.png" id="37_8cql4"]
+[ext_resource type="Texture2D" uid="uid://b0l8x8bvhm5b" path="res://Assets/Ext_Cockpit/Eau/Eau036.png" id="38_3fymm"]
 [ext_resource type="PackedScene" uid="uid://0klunj0c1ti" path="res://Scenes/Minigame/KeyPad.tscn" id="38_udp48"]
 [ext_resource type="PackedScene" uid="uid://p48jwya14kf0" path="res://Scenes/Minigame/CubePlacement.tscn" id="39_ngimo"]
-[ext_resource type="Texture2D" uid="uid://bns3cqq5oglcc" path="res://Assets/Ext_Cockpit/Eau/Eau37.png" id="39_r5piu"]
-[ext_resource type="Texture2D" uid="uid://7hvtt2mw55k3" path="res://Assets/Ext_Cockpit/Eau/Eau38.png" id="40_46174"]
+[ext_resource type="Texture2D" uid="uid://o0oq57f57kn2" path="res://Assets/Ext_Cockpit/Eau/Eau037.png" id="39_ot34y"]
+[ext_resource type="Texture2D" uid="uid://ch1hfmqeh3bso" path="res://Assets/Ext_Cockpit/Eau/Eau038.png" id="40_3r5qc"]
 [ext_resource type="AudioStream" uid="uid://n2usvqw832v3" path="res://Assets/Audio/Ambiant/AmbiencePlane.wav" id="40_jltsj"]
 [ext_resource type="Texture2D" uid="uid://pjvcwrdeuv81" path="res://Assets/Explosion/explosion_00001.png" id="41_60gob"]
 [ext_resource type="Texture2D" uid="uid://e2h8kj8arf5f" path="res://Assets/Explosion/Image vide 704x396.png" id="41_igh86"]
-[ext_resource type="Texture2D" uid="uid://cp6gfq2h72jwf" path="res://Assets/Ext_Cockpit/Eau/Eau39.png" id="41_kg6oq"]
-[ext_resource type="Texture2D" uid="uid://bp2mfybc4ot3e" path="res://Assets/Ext_Cockpit/Eau/Eau40.png" id="42_iqdv8"]
+[ext_resource type="Texture2D" uid="uid://bblnr37rjm4r0" path="res://Assets/Ext_Cockpit/Eau/Eau039.png" id="41_kb47x"]
+[ext_resource type="Texture2D" uid="uid://cd8u3an7nduf2" path="res://Assets/Ext_Cockpit/Eau/Eau040.png" id="42_hnyul"]
 [ext_resource type="Texture2D" uid="uid://mjg83cdcr81q" path="res://Assets/Explosion/explosion_00002.png" id="42_jy5lh"]
+[ext_resource type="Texture2D" uid="uid://dpqps7qnlge0e" path="res://Assets/Ext_Cockpit/Eau/Eau041.png" id="43_m5n1k"]
 [ext_resource type="Texture2D" uid="uid://lpnxy5hvk30c" path="res://Assets/Explosion/explosion_00003.png" id="43_p6n4t"]
-[ext_resource type="Texture2D" uid="uid://sbrdi7hydfc5" path="res://Assets/Ext_Cockpit/Eau/Eau41.png" id="43_xbyul"]
+[ext_resource type="Texture2D" uid="uid://ow08gtrlatec" path="res://Assets/Ext_Cockpit/Eau/Eau042.png" id="44_a2i3i"]
 [ext_resource type="Texture2D" uid="uid://c2bvtvacc13o4" path="res://Assets/Explosion/explosion_00004.png" id="44_i4xbm"]
-[ext_resource type="Texture2D" uid="uid://cd1mwsgvjfivt" path="res://Assets/Ext_Cockpit/Eau/Eau42.png" id="44_n3xjf"]
 [ext_resource type="Texture2D" uid="uid://dg0wgm86hqh1h" path="res://Assets/Explosion/explosion_00005.png" id="45_1baj8"]
-[ext_resource type="Texture2D" uid="uid://hmk7e4esgjw5" path="res://Assets/Ext_Cockpit/Eau/Eau43.png" id="45_bpqdo"]
+[ext_resource type="Texture2D" uid="uid://brcu7k4qj8obe" path="res://Assets/Ext_Cockpit/Eau/Eau043.png" id="45_sbns8"]
+[ext_resource type="Texture2D" uid="uid://dvldyxuhvsbf0" path="res://Assets/Ext_Cockpit/Eau/Eau044.png" id="46_1a4xv"]
 [ext_resource type="Texture2D" uid="uid://53lc8xyfb4es" path="res://Assets/Explosion/explosion_00006.png" id="46_hpvp6"]
-[ext_resource type="Texture2D" uid="uid://gh4l8178cmcn" path="res://Assets/Ext_Cockpit/Eau/Eau44.png" id="46_yunk3"]
 [ext_resource type="Texture2D" uid="uid://ys3sjdehoode" path="res://Assets/Explosion/explosion_00007.png" id="47_2qh3m"]
-[ext_resource type="Texture2D" uid="uid://bhadykj5p82il" path="res://Assets/Ext_Cockpit/Eau/Eau45.png" id="47_p4erv"]
+[ext_resource type="Texture2D" uid="uid://ckqsxj8wsg1ie" path="res://Assets/Ext_Cockpit/Eau/Eau045.png" id="47_lr3ju"]
+[ext_resource type="Texture2D" uid="uid://gg1b5yteo2wk" path="res://Assets/Ext_Cockpit/Eau/Eau046.png" id="48_dto6w"]
 [ext_resource type="Texture2D" uid="uid://btxvaot3fy31t" path="res://Assets/Explosion/explosion_00008.png" id="48_qjbt5"]
-[ext_resource type="Texture2D" uid="uid://c2rh0r0i18mu8" path="res://Assets/Ext_Cockpit/Eau/Eau46.png" id="48_xavvt"]
-[ext_resource type="Texture2D" uid="uid://c7tjgk7pf4u3h" path="res://Assets/Ext_Cockpit/Eau/Eau47.png" id="49_72cxl"]
+[ext_resource type="Texture2D" uid="uid://by2t8d0qb6ed7" path="res://Assets/Ext_Cockpit/Eau/Eau047.png" id="49_68skn"]
 [ext_resource type="Texture2D" uid="uid://dvc65ydsv2l4y" path="res://Assets/Explosion/explosion_00009.png" id="49_i6tws"]
 [ext_resource type="Texture2D" uid="uid://bpm1q61f3mv0d" path="res://Assets/Explosion/explosion_00010.png" id="50_0uc8i"]
-[ext_resource type="Texture2D" uid="uid://6wyg3nr4owl3" path="res://Assets/Ext_Cockpit/Eau/Eau48.png" id="50_p370y"]
-[ext_resource type="Texture2D" uid="uid://bvleak12tc2ne" path="res://Assets/Ext_Cockpit/Eau/Eau49.png" id="51_47lxt"]
+[ext_resource type="Texture2D" uid="uid://d2bxbqscnxx8r" path="res://Assets/Ext_Cockpit/Eau/Eau048.png" id="50_iqoh4"]
+[ext_resource type="Texture2D" uid="uid://ifx1o5t17c65" path="res://Assets/Ext_Cockpit/Eau/Eau049.png" id="51_ogprx"]
 [ext_resource type="Texture2D" uid="uid://dpc7crctn2cga" path="res://Assets/Explosion/explosion_00011.png" id="51_s366e"]
+[ext_resource type="Texture2D" uid="uid://bf52sxxdpkutc" path="res://Assets/Ext_Cockpit/Eau/Eau050.png" id="52_62pab"]
 [ext_resource type="Texture2D" uid="uid://cexv84ot8c7cb" path="res://Assets/Explosion/explosion_00012.png" id="52_fxre4"]
-[ext_resource type="Texture2D" uid="uid://en1fro6ofjc5" path="res://Assets/Ext_Cockpit/Eau/Eau50.png" id="52_hksql"]
-[ext_resource type="Texture2D" uid="uid://w3dxvbmml57s" path="res://Assets/Ext_Cockpit/Eau/Eau51.png" id="53_mryif"]
+[ext_resource type="Texture2D" uid="uid://u76m5epmh1ww" path="res://Assets/Ext_Cockpit/Eau/Eau051.png" id="53_uy6wk"]
 [ext_resource type="Texture2D" uid="uid://bqjgrlgwmeg7j" path="res://Assets/Explosion/explosion_00013.png" id="53_whbr6"]
 [ext_resource type="Texture2D" uid="uid://nltjvgph4djv" path="res://Assets/Explosion/explosion_00014.png" id="54_ovsox"]
-[ext_resource type="Texture2D" uid="uid://bha5011kohlq2" path="res://Assets/Ext_Cockpit/Eau/Eau52.png" id="54_sqgjg"]
+[ext_resource type="Texture2D" uid="uid://c1biiv7axncya" path="res://Assets/Ext_Cockpit/Eau/Eau052.png" id="54_xe5rr"]
+[ext_resource type="Texture2D" uid="uid://cgy710jtscssl" path="res://Assets/Ext_Cockpit/Eau/Eau053.png" id="55_67ld5"]
 [ext_resource type="Texture2D" uid="uid://7qxohb086p6e" path="res://Assets/Explosion/explosion_00015.png" id="55_bshj3"]
-[ext_resource type="Texture2D" uid="uid://bbft2fu1guqem" path="res://Assets/Ext_Cockpit/Eau/Eau53.png" id="55_l11i4"]
 [ext_resource type="Texture2D" uid="uid://bibimui57ikl5" path="res://Assets/Explosion/explosion_00016.png" id="56_anp5n"]
-[ext_resource type="Texture2D" uid="uid://b5bq47hytw26l" path="res://Assets/Ext_Cockpit/Eau/Eau54.png" id="56_orj8y"]
+[ext_resource type="Texture2D" uid="uid://vu67enkaojj8" path="res://Assets/Ext_Cockpit/Eau/Eau054.png" id="56_u3i2s"]
 [ext_resource type="Texture2D" uid="uid://ducfpcnqhrt1r" path="res://Assets/Explosion/explosion_00017.png" id="57_3uks5"]
-[ext_resource type="Texture2D" uid="uid://cwj5q1bdgpbga" path="res://Assets/Ext_Cockpit/Eau/Eau55.png" id="57_b2e3w"]
-[ext_resource type="Texture2D" uid="uid://dn8eg0wnqfoo0" path="res://Assets/Ext_Cockpit/Eau/Eau56.png" id="58_5nnej"]
+[ext_resource type="Texture2D" uid="uid://xr3qw063hhx" path="res://Assets/Ext_Cockpit/Eau/Eau055.png" id="57_6bb56"]
+[ext_resource type="Texture2D" uid="uid://0cvhwal8krsv" path="res://Assets/Ext_Cockpit/Eau/Eau056.png" id="58_2c2yt"]
 [ext_resource type="Texture2D" uid="uid://lx7blf7vncv2" path="res://Assets/Explosion/explosion_00018.png" id="58_sq48v"]
-[ext_resource type="Texture2D" uid="uid://u4oag0ycys28" path="res://Assets/Ext_Cockpit/Eau/Eau57.png" id="59_je43t"]
 [ext_resource type="Texture2D" uid="uid://7ah36ii8uvej" path="res://Assets/Explosion/explosion_00019.png" id="59_jghhq"]
+[ext_resource type="Texture2D" uid="uid://smxs2auo3qnf" path="res://Assets/Ext_Cockpit/Eau/Eau057.png" id="59_upliy"]
 [ext_resource type="Texture2D" uid="uid://cwqvbg4e8h8vw" path="res://Assets/Explosion/explosion_00020.png" id="60_3p1dm"]
-[ext_resource type="Texture2D" uid="uid://b1pfalnjajqhm" path="res://Assets/Ext_Cockpit/Eau/Eau58.png" id="60_7av57"]
-[ext_resource type="Texture2D" uid="uid://da40bbglim78u" path="res://Assets/Ext_Cockpit/Eau/Eau59.png" id="61_ag2nt"]
+[ext_resource type="Texture2D" uid="uid://yg6j1rxyef6k" path="res://Assets/Ext_Cockpit/Eau/Eau058.png" id="60_vf1wx"]
+[ext_resource type="Texture2D" uid="uid://cdtulludlvami" path="res://Assets/Ext_Cockpit/Eau/Eau059.png" id="61_mfs71"]
 [ext_resource type="Texture2D" uid="uid://co77ybdtkdld" path="res://Assets/Explosion/explosion_00021.png" id="61_va8o2"]
-[ext_resource type="Texture2D" uid="uid://ctm31ins4byqi" path="res://Assets/Ext_Cockpit/Eau/Eau60.png" id="62_f68vq"]
 [ext_resource type="Texture2D" uid="uid://d4bml874vckrb" path="res://Assets/Explosion/explosion_00022.png" id="62_gl621"]
-[ext_resource type="Texture2D" uid="uid://c4sjk3qvsbqq8" path="res://Assets/Ext_Cockpit/Eau/Eau61.png" id="63_lahp2"]
+[ext_resource type="Texture2D" uid="uid://bglrxjbt5nfb4" path="res://Assets/Ext_Cockpit/Eau/Eau060.png" id="62_ohpa7"]
 [ext_resource type="Texture2D" uid="uid://ctfxnkdfp6ppn" path="res://Assets/Explosion/explosion_00023.png" id="63_n6ljd"]
+[ext_resource type="Texture2D" uid="uid://56ggjl4xuv53" path="res://Assets/Ext_Cockpit/Eau/Eau061.png" id="63_sy2md"]
+[ext_resource type="Texture2D" uid="uid://dl2flqolttsp5" path="res://Assets/Ext_Cockpit/Eau/Eau062.png" id="64_8gspw"]
 [ext_resource type="Texture2D" uid="uid://c5glj7ef2sl0f" path="res://Assets/Explosion/explosion_00024.png" id="64_arf4g"]
-[ext_resource type="Texture2D" uid="uid://c4phrk58oq3uk" path="res://Assets/Ext_Cockpit/Eau/Eau62.png" id="64_sqli6"]
-[ext_resource type="Texture2D" uid="uid://cbmx1kub580t5" path="res://Assets/Ext_Cockpit/Eau/Eau63.png" id="65_ru0iu"]
+[ext_resource type="Texture2D" uid="uid://cpyiqb6wqstn" path="res://Assets/Ext_Cockpit/Eau/Eau063.png" id="65_w61vm"]
 [ext_resource type="Texture2D" uid="uid://vghny1qdgp8k" path="res://Assets/Explosion/explosion_00025.png" id="65_xg8w3"]
+[ext_resource type="Texture2D" uid="uid://d2jsluyce646s" path="res://Assets/Ext_Cockpit/Eau/Eau064.png" id="66_54faw"]
 [ext_resource type="Texture2D" uid="uid://cp2sw1lanfsc8" path="res://Assets/Explosion/explosion_00026.png" id="66_ko4sm"]
-[ext_resource type="Texture2D" uid="uid://bwv1bkvpjenuw" path="res://Assets/Ext_Cockpit/Eau/Eau64.png" id="66_xxjbo"]
 [ext_resource type="Texture2D" uid="uid://btw32hdf3ihg" path="res://Assets/Explosion/explosion_00027.png" id="67_2qwh2"]
-[ext_resource type="Texture2D" uid="uid://vkmpd0f84uki" path="res://Assets/Ext_Cockpit/Eau/Eau65.png" id="67_h6hbj"]
+[ext_resource type="Texture2D" uid="uid://dun2d42wo5mau" path="res://Assets/Ext_Cockpit/Eau/Eau065.png" id="67_8xviu"]
+[ext_resource type="Texture2D" uid="uid://n57ap84jm22j" path="res://Assets/Ext_Cockpit/Eau/Eau066.png" id="68_2pu8h"]
 [ext_resource type="Texture2D" uid="uid://br50kunyfrlj3" path="res://Assets/Explosion/explosion_00028.png" id="68_fjblp"]
-[ext_resource type="Texture2D" uid="uid://phs7l5u87toe" path="res://Assets/Ext_Cockpit/Eau/Eau66.png" id="68_s7kxs"]
-[ext_resource type="Texture2D" uid="uid://kwf6bphehif4" path="res://Assets/Ext_Cockpit/Eau/Eau67.png" id="69_jun0f"]
 [ext_resource type="Texture2D" uid="uid://ddlw4hd3f7jcn" path="res://Assets/Explosion/explosion_00029.png" id="69_krf5n"]
+[ext_resource type="Texture2D" uid="uid://cc2hqlsdjuvkc" path="res://Assets/Ext_Cockpit/Eau/Eau067.png" id="69_s4ig5"]
 [ext_resource type="Texture2D" uid="uid://darb7lqmkevxj" path="res://Assets/Explosion/explosion_00030.png" id="70_362sq"]
-[ext_resource type="Texture2D" uid="uid://dr1wggty4dbxh" path="res://Assets/Ext_Cockpit/Eau/Eau68.png" id="70_wdqib"]
-[ext_resource type="Texture2D" uid="uid://bxau5ucxix528" path="res://Assets/Ext_Cockpit/Eau/Eau69.png" id="71_m8v3d"]
+[ext_resource type="Texture2D" uid="uid://cvjle1t4o02s7" path="res://Assets/Ext_Cockpit/Eau/Eau068.png" id="70_i8ynv"]
 [ext_resource type="Texture2D" uid="uid://dvpywbot2tg20" path="res://Assets/Explosion/explosion_00031.png" id="71_qql3f"]
+[ext_resource type="Texture2D" uid="uid://ctsdgnggvasvu" path="res://Assets/Ext_Cockpit/Eau/Eau069.png" id="71_uoyo1"]
 [ext_resource type="Texture2D" uid="uid://jfot6v1wp1sm" path="res://Assets/Explosion/explosion_00032.png" id="72_5qo3d"]
-[ext_resource type="Texture2D" uid="uid://c11anksfj0gnu" path="res://Assets/Ext_Cockpit/Eau/Eau70.png" id="72_sedvh"]
+[ext_resource type="Texture2D" uid="uid://dd0bnq3ujsngl" path="res://Assets/Ext_Cockpit/Eau/Eau070.png" id="72_cby22"]
 [ext_resource type="Texture2D" uid="uid://cyvv73w6rkw1a" path="res://Assets/Explosion/explosion_00033.png" id="73_c6mxv"]
-[ext_resource type="Texture2D" uid="uid://ktcu423ydoef" path="res://Assets/Ext_Cockpit/Eau/Eau71.png" id="73_nbe8l"]
+[ext_resource type="Texture2D" uid="uid://br56tbj2xc21o" path="res://Assets/Ext_Cockpit/Eau/Eau071.png" id="73_uumjn"]
 [ext_resource type="Texture2D" uid="uid://2qtmbgy4old1" path="res://Assets/Explosion/explosion_00034.png" id="74_1yikx"]
-[ext_resource type="Texture2D" uid="uid://bb5oha5pr5ii8" path="res://Assets/Ext_Cockpit/Eau/Eau72.png" id="74_fdyye"]
+[ext_resource type="Texture2D" uid="uid://bgkd17277xpf5" path="res://Assets/Ext_Cockpit/Eau/Eau072.png" id="74_ccr0h"]
+[ext_resource type="Texture2D" uid="uid://dplsaf6hdblsn" path="res://Assets/Ext_Cockpit/Eau/Eau073.png" id="75_ioamw"]
 [ext_resource type="Texture2D" uid="uid://csv03w628x6su" path="res://Assets/Explosion/explosion_00035.png" id="75_j7ut0"]
-[ext_resource type="Texture2D" uid="uid://dpupp48rqu4jm" path="res://Assets/Ext_Cockpit/Eau/Eau73.png" id="75_ulart"]
-[ext_resource type="Texture2D" uid="uid://dohc55k0viydi" path="res://Assets/Ext_Cockpit/Eau/Eau74.png" id="76_kenga"]
 [ext_resource type="Texture2D" uid="uid://bxpxoq0l7dtid" path="res://Assets/Explosion/explosion_00036.png" id="76_uh5pl"]
+[ext_resource type="Texture2D" uid="uid://bry0l4v627540" path="res://Assets/Ext_Cockpit/Eau/Eau074.png" id="76_xgwrs"]
 [ext_resource type="Texture2D" uid="uid://d2wfrep6qfxjw" path="res://Assets/Explosion/explosion_00037.png" id="77_fj2bu"]
-[ext_resource type="Texture2D" uid="uid://b1d1uc41cedmc" path="res://Assets/Ext_Cockpit/Eau/Eau75.png" id="77_tysxs"]
+[ext_resource type="Texture2D" uid="uid://j1oq1bpl1btr" path="res://Assets/Ext_Cockpit/Eau/Eau075.png" id="77_yuhe1"]
 [ext_resource type="Texture2D" uid="uid://b1vrf0fg8348l" path="res://Assets/Explosion/explosion_00038.png" id="78_6t0r1"]
-[ext_resource type="Texture2D" uid="uid://cpscnmte46ixw" path="res://Assets/Ext_Cockpit/Eau/Eau76.png" id="78_pev3e"]
+[ext_resource type="Texture2D" uid="uid://bfe0k5rsy5tc6" path="res://Assets/Ext_Cockpit/Eau/Eau076.png" id="78_hfaw4"]
+[ext_resource type="Texture2D" uid="uid://c3chq07qxxeti" path="res://Assets/Ext_Cockpit/Eau/Eau077.png" id="79_0xe0g"]
 [ext_resource type="Texture2D" uid="uid://dqgfadg7ed4f5" path="res://Assets/Explosion/explosion_00039.png" id="79_4n3jw"]
-[ext_resource type="Texture2D" uid="uid://cx10bilho3652" path="res://Assets/Ext_Cockpit/Eau/Eau77.png" id="79_ortmo"]
-[ext_resource type="Texture2D" uid="uid://bq3sc1ff8onyi" path="res://Assets/Ext_Cockpit/Eau/Eau78.png" id="80_a3sca"]
 [ext_resource type="Texture2D" uid="uid://xepxuhluwp0b" path="res://Assets/Explosion/explosion_00040.png" id="80_b4xjr"]
-[ext_resource type="Texture2D" uid="uid://big0oa1c0t1cd" path="res://Assets/Ext_Cockpit/Eau/Eau79.png" id="81_gukvc"]
+[ext_resource type="Texture2D" uid="uid://ci82fybs6mmav" path="res://Assets/Ext_Cockpit/Eau/Eau078.png" id="80_rky32"]
+[ext_resource type="Texture2D" uid="uid://dkc8bg3ouf507" path="res://Assets/Ext_Cockpit/Eau/Eau079.png" id="81_i8al7"]
 [ext_resource type="Texture2D" uid="uid://yfa5o4pv1rh6" path="res://Assets/Explosion/explosion_00041.png" id="81_iqd2j"]
 [ext_resource type="Texture2D" uid="uid://bvdgvp3na5p37" path="res://Assets/Explosion/explosion_00042.png" id="82_1uvhs"]
-[ext_resource type="Texture2D" uid="uid://cjyrtb62htd6h" path="res://Assets/Ext_Cockpit/Eau/Eau80.png" id="82_2bpnd"]
-[ext_resource type="Texture2D" uid="uid://bfhu6d7cafwvf" path="res://Assets/Ext_Cockpit/Eau/Eau81.png" id="83_6qya3"]
+[ext_resource type="Texture2D" uid="uid://ca35wdhkx21v7" path="res://Assets/Ext_Cockpit/Eau/Eau080.png" id="82_dgsm6"]
 [ext_resource type="Texture2D" uid="uid://dsn70gx13t7ya" path="res://Assets/Explosion/explosion_00043.png" id="83_60w7q"]
-[ext_resource type="Texture2D" uid="uid://coaxfgfkjdhlc" path="res://Assets/Ext_Cockpit/Eau/Eau82.png" id="84_h38x8"]
+[ext_resource type="Texture2D" uid="uid://dq4yr278xcxn7" path="res://Assets/Ext_Cockpit/Eau/Eau081.png" id="83_d07kr"]
+[ext_resource type="Texture2D" uid="uid://b78gqyvlcrtrt" path="res://Assets/Ext_Cockpit/Eau/Eau082.png" id="84_t6ydd"]
 [ext_resource type="Texture2D" uid="uid://7ne25j77aq56" path="res://Assets/Explosion/explosion_00044.png" id="84_wfguj"]
 [ext_resource type="Texture2D" uid="uid://dm3ki1tnl7cs5" path="res://Assets/Explosion/explosion_00045.png" id="85_5xboc"]
-[ext_resource type="Texture2D" uid="uid://buw8rxu3w8wip" path="res://Assets/Ext_Cockpit/Eau/Eau83.png" id="85_o2lnm"]
-[ext_resource type="Texture2D" uid="uid://brx7xqhwpqq7d" path="res://Assets/Ext_Cockpit/Eau/Eau84.png" id="86_a2pm8"]
+[ext_resource type="Texture2D" uid="uid://clcsxevqbqfag" path="res://Assets/Ext_Cockpit/Eau/Eau083.png" id="85_yaxik"]
+[ext_resource type="Texture2D" uid="uid://ceu5cgj4j6ov4" path="res://Assets/Ext_Cockpit/Eau/Eau084.png" id="86_b6h12"]
 [ext_resource type="Texture2D" uid="uid://l1wra6742kgi" path="res://Assets/Explosion/explosion_00046.png" id="86_bcq60"]
 [ext_resource type="Texture2D" uid="uid://bx6qggii7eeqd" path="res://Assets/Explosion/explosion_00047.png" id="87_6s68m"]
-[ext_resource type="Texture2D" uid="uid://bg3u1kqjv6gl1" path="res://Assets/Ext_Cockpit/Eau/Eau85.png" id="87_t6w3b"]
+[ext_resource type="Texture2D" uid="uid://bnycxflybh1me" path="res://Assets/Ext_Cockpit/Eau/Eau085.png" id="87_18gxj"]
 [ext_resource type="Texture2D" uid="uid://swffqtu04mdw" path="res://Assets/Explosion/explosion_00048.png" id="88_4bbp4"]
-[ext_resource type="Texture2D" uid="uid://dogfloh71temp" path="res://Assets/Ext_Cockpit/Eau/Eau86.png" id="88_s6qvc"]
-[ext_resource type="Texture2D" uid="uid://408cdnd6motm" path="res://Assets/Ext_Cockpit/Eau/Eau87.png" id="89_boa2q"]
+[ext_resource type="Texture2D" uid="uid://cc6sdsxfbeq0p" path="res://Assets/Ext_Cockpit/Eau/Eau086.png" id="88_sxx40"]
+[ext_resource type="Texture2D" uid="uid://bx5fo2l0e3pv6" path="res://Assets/Ext_Cockpit/Eau/Eau087.png" id="89_j0k4f"]
 [ext_resource type="Texture2D" uid="uid://dq55xwbhc1lkk" path="res://Assets/Explosion/explosion_00049.png" id="89_twduh"]
 [ext_resource type="Texture2D" uid="uid://bxuwn0ye77c7p" path="res://Assets/Ext_Cockpit/Nuages/Nuages00.png" id="90_gqcha"]
+[ext_resource type="Texture2D" uid="uid://clj4ix3it23o4" path="res://Assets/Ext_Cockpit/Eau/Eau088.png" id="90_rbmip"]
 [ext_resource type="Texture2D" uid="uid://b4yi6iuss3d62" path="res://Assets/Explosion/explosion_00050.png" id="90_sekr5"]
+[ext_resource type="Texture2D" uid="uid://52721do8jl4s" path="res://Assets/Ext_Cockpit/Montagne/Montagnes000.png" id="90_vgkkx"]
+[ext_resource type="Texture2D" uid="uid://bw6xm0r4hxcaq" path="res://Assets/Ext_Cockpit/Eau/Eau089.png" id="91_1doc5"]
+[ext_resource type="Texture2D" uid="uid://chr5ik504tbou" path="res://Assets/Ext_Cockpit/Montagne/Montagnes001.png" id="91_4tbko"]
 [ext_resource type="Texture2D" uid="uid://b5k22t1c0mjev" path="res://Assets/Ext_Cockpit/Nuages/Nuages01.png" id="91_avxdm"]
 [ext_resource type="Texture2D" uid="uid://c8ao2ly8eocca" path="res://Assets/Explosion/explosion_00051.png" id="91_hybvp"]
+[ext_resource type="Texture2D" uid="uid://dluenjc2udw28" path="res://Assets/Ext_Cockpit/Eau/Eau090.png" id="92_0yrku"]
+[ext_resource type="Texture2D" uid="uid://wohsob6mnhye" path="res://Assets/Ext_Cockpit/Montagne/Montagnes002.png" id="92_2iibr"]
 [ext_resource type="Texture2D" uid="uid://b3v4pdpafvaix" path="res://Assets/Explosion/explosion_00052.png" id="92_f8liy"]
 [ext_resource type="Texture2D" uid="uid://c2yqcvalq3aq3" path="res://Assets/Ext_Cockpit/Nuages/Nuages02.png" id="92_h70mn"]
 [ext_resource type="Texture2D" uid="uid://bakmsk3ptojuy" path="res://Assets/Ext_Cockpit/Nuages/Nuages03.png" id="93_a6l5d"]
+[ext_resource type="Texture2D" uid="uid://djl3aqtrcq2fk" path="res://Assets/Ext_Cockpit/Eau/Eau091.png" id="93_b30ev"]
+[ext_resource type="Texture2D" uid="uid://dw4eh6b62vf4i" path="res://Assets/Ext_Cockpit/Montagne/Montagnes003.png" id="93_hcp17"]
 [ext_resource type="Texture2D" uid="uid://bjg7fhpbmh7su" path="res://Assets/Explosion/explosion_00053.png" id="93_qyujm"]
 [ext_resource type="Texture2D" uid="uid://cdcxic6ec7blr" path="res://Assets/MiniJeux/Vitesse/VitesseButtonUp.png" id="94_8sif2"]
 [ext_resource type="Texture2D" uid="uid://bjl3e06v4p4mm" path="res://Assets/Ext_Cockpit/Nuages/Nuages04.png" id="94_kc7v7"]
+[ext_resource type="Texture2D" uid="uid://dgf05b5uct8ar" path="res://Assets/Ext_Cockpit/Eau/Eau092.png" id="94_odo30"]
 [ext_resource type="Texture2D" uid="uid://d1ibysn8xa6gc" path="res://Assets/Explosion/explosion_00054.png" id="94_q5lu5"]
+[ext_resource type="Texture2D" uid="uid://d3lokgxlnrxg7" path="res://Assets/Ext_Cockpit/Montagne/Montagnes004.png" id="94_resjd"]
+[ext_resource type="Texture2D" uid="uid://cbj820ivmo82p" path="res://Assets/Ext_Cockpit/Montagne/Montagnes005.png" id="95_6rbcl"]
 [ext_resource type="Texture2D" uid="uid://bjasmyonimavj" path="res://Assets/Ext_Cockpit/Nuages/Nuages05.png" id="95_kmq7c"]
 [ext_resource type="Texture2D" uid="uid://b3y8fhp3uh06b" path="res://Assets/MiniJeux/Vitesse/VitesseButtonDown.png" id="95_vo51c"]
+[ext_resource type="Texture2D" uid="uid://c1vfvsv7xav8k" path="res://Assets/Ext_Cockpit/Eau/Eau093.png" id="95_wxyd7"]
 [ext_resource type="Texture2D" uid="uid://degjyc8am77hs" path="res://Assets/Explosion/explosion_00055.png" id="95_ypaf1"]
+[ext_resource type="Texture2D" uid="uid://mipgreq7wdp" path="res://Assets/Ext_Cockpit/Montagne/Montagnes006.png" id="96_ppwcg"]
+[ext_resource type="Texture2D" uid="uid://dk7ns61mrkk76" path="res://Assets/Ext_Cockpit/Eau/Eau094.png" id="96_rgdfc"]
 [ext_resource type="Texture2D" uid="uid://biq0veapeijwt" path="res://Assets/Ext_Cockpit/Nuages/Nuages06.png" id="96_tceia"]
 [ext_resource type="Texture2D" uid="uid://chiqavx5j0wr8" path="res://Assets/Explosion/explosion_00056.png" id="96_yl4ht"]
+[ext_resource type="Texture2D" uid="uid://tea012ob5qxi" path="res://Assets/Ext_Cockpit/Montagne/Montagnes007.png" id="97_7y8vo"]
 [ext_resource type="Texture2D" uid="uid://ch06xnlr03ags" path="res://Assets/Explosion/explosion_00057.png" id="97_8g6p0"]
 [ext_resource type="Texture2D" uid="uid://p0voo7xxi73" path="res://Assets/Ext_Cockpit/Nuages/Nuages07.png" id="97_i3kxk"]
+[ext_resource type="Texture2D" uid="uid://nvugacgs3kf3" path="res://Assets/Ext_Cockpit/Eau/Eau095.png" id="97_sxcjs"]
 [ext_resource type="Texture2D" uid="uid://ea7p1orf2j31" path="res://Assets/Explosion/explosion_00058.png" id="98_rxp81"]
 [ext_resource type="Texture2D" uid="uid://bs7kn6otgcpa2" path="res://Assets/Ext_Cockpit/Nuages/Nuages08.png" id="98_wbuil"]
+[ext_resource type="Texture2D" uid="uid://b3stqjapciebr" path="res://Assets/Ext_Cockpit/Eau/Eau096.png" id="98_wkmjq"]
+[ext_resource type="Texture2D" uid="uid://rxwo4qk5eocc" path="res://Assets/Ext_Cockpit/Montagne/Montagnes008.png" id="98_xh66v"]
+[ext_resource type="Texture2D" uid="uid://dkxoajalcogq0" path="res://Assets/Ext_Cockpit/Eau/Eau097.png" id="99_7x46e"]
 [ext_resource type="Texture2D" uid="uid://duw5d0lk1kes5" path="res://Assets/Explosion/explosion_00059.png" id="99_epld3"]
 [ext_resource type="Texture2D" uid="uid://cg0smedem4aob" path="res://Assets/Ext_Cockpit/Nuages/Nuages09.png" id="99_hpyu1"]
+[ext_resource type="Texture2D" uid="uid://tib7y22skx58" path="res://Assets/Ext_Cockpit/Montagne/Montagnes009.png" id="99_vwppo"]
+[ext_resource type="Texture2D" uid="uid://cas1pmlklio4k" path="res://Assets/Ext_Cockpit/Montagne/Montagnes010.png" id="100_b3ucr"]
+[ext_resource type="Texture2D" uid="uid://bsb1f4l82x2sn" path="res://Assets/Ext_Cockpit/Eau/Eau098.png" id="100_doj43"]
 [ext_resource type="Texture2D" uid="uid://jdchvoburvo7" path="res://Assets/Ext_Cockpit/Nuages/Nuages10.png" id="100_rf723"]
 [ext_resource type="Texture2D" uid="uid://bmyw2jw12pwtm" path="res://Assets/Ext_Cockpit/Nuages/Nuages11.png" id="101_5kg5h"]
+[ext_resource type="Texture2D" uid="uid://b2x8nbxst8j04" path="res://Assets/Ext_Cockpit/Montagne/Montagnes011.png" id="101_f77g2"]
+[ext_resource type="Texture2D" uid="uid://1nsdy4ukmuap" path="res://Assets/Ext_Cockpit/Eau/Eau099.png" id="101_ld2ap"]
 [ext_resource type="PackedScene" uid="uid://djgknxy2afku4" path="res://Scenes/Minigame/curve_minigame.tscn" id="101_s1wen"]
+[ext_resource type="Texture2D" uid="uid://kuttms30wln3" path="res://Assets/Ext_Cockpit/Montagne/Montagnes012.png" id="102_0gs34"]
+[ext_resource type="Texture2D" uid="uid://bi44rhf5ykmnj" path="res://Assets/Ext_Cockpit/Eau/Eau100.png" id="102_8cl5m"]
 [ext_resource type="Texture2D" uid="uid://chh2sm5gymroe" path="res://Assets/Ext_Cockpit/Nuages/Nuages12.png" id="102_576dl"]
 [ext_resource type="PackedScene" uid="uid://b1boh8yiojwfm" path="res://Scenes/Minigame/rotation_minigame.tscn" id="102_srneo"]
 [ext_resource type="Texture2D" uid="uid://chl7vx8wqi2nr" path="res://Assets/Ext_Cockpit/Nuages/Nuages13.png" id="103_4bb50"]
 [ext_resource type="PackedScene" uid="uid://bn0w56kkgq58e" path="res://Scenes/Minigame/labyrinthe_minigame.tscn" id="103_cb54i"]
+[ext_resource type="Texture2D" uid="uid://bppgu3ugeqtwt" path="res://Assets/Ext_Cockpit/Montagne/Montagnes013.png" id="103_ebgh8"]
+[ext_resource type="Texture2D" uid="uid://b3bb3kar63fb2" path="res://Assets/Ext_Cockpit/Eau/Eau101.png" id="103_hjhgr"]
+[ext_resource type="Texture2D" uid="uid://dikwpcvp04nwj" path="res://Assets/Ext_Cockpit/Eau/Eau102.png" id="104_cjcly"]
+[ext_resource type="Texture2D" uid="uid://c4tjjxkvcncve" path="res://Assets/Ext_Cockpit/Montagne/Montagnes014.png" id="104_kgai4"]
 [ext_resource type="Texture2D" uid="uid://bv2gq74qoj4vy" path="res://Assets/Ext_Cockpit/Nuages/Nuages14.png" id="104_kl88i"]
 [ext_resource type="Texture2D" uid="uid://p2tjee2namff" path="res://Assets/MiniJeux/Nitro/nos.png" id="104_l4er0"]
+[ext_resource type="Texture2D" uid="uid://dsum1xptsbksk" path="res://Assets/Ext_Cockpit/Eau/Eau103.png" id="105_aqm4r"]
+[ext_resource type="Texture2D" uid="uid://b3td26xrycj0d" path="res://Assets/Ext_Cockpit/Montagne/Montagnes015.png" id="105_gk8lc"]
 [ext_resource type="Script" path="res://addons/MultiTouchGui/MultiTouchButton.gd" id="105_nuyac"]
 [ext_resource type="Texture2D" uid="uid://qkpwnqwcx6tf" path="res://Assets/Ext_Cockpit/Nuages/Nuages15.png" id="105_xg5w0"]
 [ext_resource type="Texture2D" uid="uid://bcnrbcgqocrf1" path="res://Assets/Ext_Cockpit/Nuages/Nuages16.png" id="106_7lpc5"]
+[ext_resource type="Texture2D" uid="uid://dinae6x45vtc5" path="res://Assets/Ext_Cockpit/Eau/Eau104.png" id="106_ty8er"]
+[ext_resource type="Texture2D" uid="uid://cilmm4fycuynq" path="res://Assets/Ext_Cockpit/Montagne/Montagnes016.png" id="106_ulaxc"]
+[ext_resource type="Texture2D" uid="uid://cudlyjxrkq8g7" path="res://Assets/Ext_Cockpit/Montagne/Montagnes017.png" id="107_2i2ia"]
 [ext_resource type="Texture2D" uid="uid://bd6fig427topt" path="res://Assets/Ext_Cockpit/Orage/OragePluie00.png" id="107_beo1s"]
 [ext_resource type="Texture2D" uid="uid://c1hikhb3r6smk" path="res://Assets/Ext_Cockpit/Nuages/Nuages17.png" id="107_degrn"]
+[ext_resource type="Texture2D" uid="uid://cwqrhap1tmlaj" path="res://Assets/Ext_Cockpit/Eau/Eau105.png" id="107_ey1bt"]
 [ext_resource type="Texture2D" uid="uid://dyrmba6irwtk3" path="res://Assets/cockpit 2.png" id="107_i37pb"]
 [ext_resource type="PackedScene" uid="uid://bhp7rwdkrgdbx" path="res://Scenes/Minigame/eject_button.tscn" id="108_3r7v1"]
 [ext_resource type="Texture2D" uid="uid://bmrd17eeqky0r" path="res://Assets/Ext_Cockpit/Nuages/Nuages18.png" id="108_go8ck"]
 [ext_resource type="Texture2D" uid="uid://c6anbeoprolv0" path="res://Assets/Ext_Cockpit/Orage/OragePluie01.png" id="108_tp2ne"]
+[ext_resource type="Texture2D" uid="uid://dagcu4a32jqsy" path="res://Assets/Ext_Cockpit/Montagne/Montagnes018.png" id="108_xjb46"]
 [ext_resource type="Texture2D" uid="uid://cw3w8k87s7xpb" path="res://Assets/Ext_Cockpit/Nuages/Nuages19.png" id="109_fyjoj"]
+[ext_resource type="Texture2D" uid="uid://bwfuxhg0td1yo" path="res://Assets/Ext_Cockpit/Montagne/Montagnes019.png" id="109_gveni"]
 [ext_resource type="PackedScene" uid="uid://bk7ssxsrkdmvv" path="res://Scenes/Minigame/ventilateur.tscn" id="109_lenho"]
 [ext_resource type="Texture2D" uid="uid://c68rj0r44dk12" path="res://Assets/Ext_Cockpit/Orage/OragePluie02.png" id="109_w06b6"]
+[ext_resource type="Texture2D" uid="uid://cmvws21wyta7b" path="res://Assets/Ext_Cockpit/Montagne/Montagnes020.png" id="110_031qx"]
 [ext_resource type="Texture2D" uid="uid://bw6w8m28qi1ce" path="res://Assets/Ext_Cockpit/Nuages/Nuages20.png" id="110_jxbrb"]
 [ext_resource type="Texture2D" uid="uid://c5kq4v8nuvawj" path="res://Assets/Ext_Cockpit/Orage/OragePluie03.png" id="110_ot47k"]
 [ext_resource type="Texture2D" uid="uid://bs6al1m0nhsnp" path="res://Assets/Ext_Cockpit/Nuages/Nuages21.png" id="111_2yajf"]
+[ext_resource type="Texture2D" uid="uid://ca7bbjnfb4mgp" path="res://Assets/Ext_Cockpit/Montagne/Montagnes021.png" id="111_gkq0e"]
 [ext_resource type="Texture2D" uid="uid://bllsejeyt33bo" path="res://Assets/Ext_Cockpit/Orage/OragePluie04.png" id="111_vg1a1"]
+[ext_resource type="Texture2D" uid="uid://sgdna1bfbmxm" path="res://Assets/Ext_Cockpit/Montagne/Montagnes022.png" id="112_ecx4e"]
 [ext_resource type="Texture2D" uid="uid://buyls6l1ewu84" path="res://Assets/Ext_Cockpit/Nuages/Nuages22.png" id="112_hr3ae"]
 [ext_resource type="Texture2D" uid="uid://u5cuyns27udw" path="res://Assets/Ext_Cockpit/Orage/OragePluie05.png" id="112_ptjlf"]
 [ext_resource type="Texture2D" uid="uid://de4f08uga7k8w" path="res://Assets/Ext_Cockpit/Nuages/Nuages23.png" id="113_7pr7g"]
 [ext_resource type="Texture2D" uid="uid://c5l6b5enwveoc" path="res://Assets/Ext_Cockpit/Orage/OragePluie06.png" id="113_fhuq0"]
+[ext_resource type="Texture2D" uid="uid://dusts4oelwsf4" path="res://Assets/Ext_Cockpit/Montagne/Montagnes023.png" id="113_uu7jq"]
 [ext_resource type="Texture2D" uid="uid://dha2a3qnluft3" path="res://Assets/MiniJeux/Leviers/Levier1/btn_1.png" id="113_xpcab"]
 [ext_resource type="Texture2D" uid="uid://bvlh5lwcfakhl" path="res://Assets/Ext_Cockpit/Nuages/Nuages24.png" id="114_0v72o"]
 [ext_resource type="Texture2D" uid="uid://xy0hk0fmabt6" path="res://Assets/MiniJeux/Leviers/Levier1/btn_0 copie.png" id="114_8xqla"]
+[ext_resource type="Texture2D" uid="uid://bi3ax7po7xeu8" path="res://Assets/Ext_Cockpit/Montagne/Montagnes024.png" id="114_ll5hg"]
 [ext_resource type="Texture2D" uid="uid://by7ecvutux64x" path="res://Assets/Ext_Cockpit/Orage/OragePluie07.png" id="114_yyl3m"]
+[ext_resource type="Texture2D" uid="uid://vof4c4rg6i25" path="res://Assets/Ext_Cockpit/Montagne/Montagnes025.png" id="115_2v0sf"]
 [ext_resource type="Texture2D" uid="uid://ck4dbu65s8o1w" path="res://Assets/MiniJeux/Leviers/Levier2/btn_1.png" id="115_anwc2"]
 [ext_resource type="Texture2D" uid="uid://clqhfbbb7ny5f" path="res://Assets/Ext_Cockpit/Nuages/Nuages25.png" id="115_e1u4k"]
 [ext_resource type="Texture2D" uid="uid://qjg2pjs8xir1" path="res://Assets/Ext_Cockpit/Orage/OragePluie08.png" id="115_jvyd1"]
 [ext_resource type="Texture2D" uid="uid://dy65u28bofera" path="res://Assets/Ext_Cockpit/Orage/OragePluie09.png" id="116_38exa"]
 [ext_resource type="Texture2D" uid="uid://dsbmmy05thrv1" path="res://Assets/MiniJeux/Leviers/Levier2/btn_0 copie.png" id="116_pgyi6"]
 [ext_resource type="Texture2D" uid="uid://vj8iy886kjnm" path="res://Assets/Ext_Cockpit/Nuages/Nuages26.png" id="116_pkho2"]
+[ext_resource type="Texture2D" uid="uid://dj238kisss4hv" path="res://Assets/Ext_Cockpit/Montagne/Montagnes026.png" id="116_y8xbi"]
 [ext_resource type="Texture2D" uid="uid://blvrmlfy4h4c5" path="res://Assets/Ext_Cockpit/Nuages/Nuages27.png" id="117_71ge0"]
+[ext_resource type="Texture2D" uid="uid://vj1qvo5qg648" path="res://Assets/Ext_Cockpit/Montagne/Montagnes027.png" id="117_71sry"]
 [ext_resource type="Texture2D" uid="uid://dem6ipl8cd83h" path="res://Assets/Ext_Cockpit/Orage/OragePluie10.png" id="117_mvnib"]
+[ext_resource type="Texture2D" uid="uid://jquin3mrde8b" path="res://Assets/Ext_Cockpit/Montagne/Montagnes028.png" id="118_7ky8q"]
 [ext_resource type="Texture2D" uid="uid://csawlehy85qt0" path="res://Assets/Ext_Cockpit/Orage/OragePluie11.png" id="118_8jd3h"]
 [ext_resource type="Texture2D" uid="uid://b6n5voj6qnvn4" path="res://Assets/Ext_Cockpit/Nuages/Nuages28.png" id="118_bbht5"]
 [ext_resource type="Texture2D" uid="uid://8ly36qvojl10" path="res://Assets/Ext_Cockpit/Nuages/Nuages29.png" id="119_m0226"]
+[ext_resource type="Texture2D" uid="uid://bfvm2idfii43i" path="res://Assets/Ext_Cockpit/Montagne/Montagnes029.png" id="119_v07yd"]
 [ext_resource type="Texture2D" uid="uid://bcsapvl6l0pkw" path="res://Assets/Ext_Cockpit/Orage/OragePluie12.png" id="119_vemuh"]
 [ext_resource type="Texture2D" uid="uid://cbs6wmi7vllol" path="res://Assets/Ext_Cockpit/Nuages/Nuages30.png" id="120_68aij"]
+[ext_resource type="Texture2D" uid="uid://caiiwqpkerm5" path="res://Assets/Ext_Cockpit/Montagne/Montagnes030.png" id="120_ndx3o"]
 [ext_resource type="Texture2D" uid="uid://yttj88xd7vbk" path="res://Assets/Ext_Cockpit/Orage/OragePluie13.png" id="120_tnfxu"]
 [ext_resource type="Texture2D" uid="uid://dmk0ssf8rd1su" path="res://Assets/Ext_Cockpit/Nuages/Nuages31.png" id="121_fsvkr"]
+[ext_resource type="Texture2D" uid="uid://1kfe24cm84kc" path="res://Assets/Ext_Cockpit/Montagne/Montagnes031.png" id="121_mxasw"]
 [ext_resource type="Texture2D" uid="uid://bx4d7dhecwltc" path="res://Assets/Ext_Cockpit/Orage/OragePluie14.png" id="121_yfr5k"]
 [ext_resource type="Texture2D" uid="uid://bbwyaffnh20i1" path="res://Assets/Ext_Cockpit/Nuages/Nuages32.png" id="122_bokk6"]
 [ext_resource type="Texture2D" uid="uid://cvoy7hn3tgdp8" path="res://Assets/Ext_Cockpit/Orage/OragePluie15.png" id="122_siq0p"]
+[ext_resource type="Texture2D" uid="uid://qny3xdiky512" path="res://Assets/Ext_Cockpit/Montagne/Montagnes032.png" id="122_yjdjm"]
 [ext_resource type="Texture2D" uid="uid://bwiyxaunby1m4" path="res://Assets/Ext_Cockpit/Nuages/Nuages33.png" id="123_1cfc4"]
+[ext_resource type="Texture2D" uid="uid://b803ur57n47he" path="res://Assets/Ext_Cockpit/Montagne/Montagnes033.png" id="123_bk35i"]
 [ext_resource type="Texture2D" uid="uid://cv2205p6cngex" path="res://Assets/Ext_Cockpit/Orage/OragePluie16.png" id="123_qvb1u"]
 [ext_resource type="Texture2D" uid="uid://ci2u2v5co0cju" path="res://Assets/Ext_Cockpit/Nuages/Nuages34.png" id="124_6wopx"]
+[ext_resource type="Texture2D" uid="uid://drwb4wxlhepv" path="res://Assets/Ext_Cockpit/Montagne/Montagnes034.png" id="124_d5wjd"]
 [ext_resource type="Texture2D" uid="uid://btulmgua7o1wf" path="res://Assets/Ext_Cockpit/Orage/OragePluie17.png" id="124_o0iqi"]
 [ext_resource type="Texture2D" uid="uid://cy2vvw54e7sr0" path="res://Assets/Ext_Cockpit/Nuages/Nuages35.png" id="125_h50ag"]
 [ext_resource type="Texture2D" uid="uid://5drpr41w1ob4" path="res://Assets/Ext_Cockpit/Orage/OragePluie18.png" id="125_uuatl"]
+[ext_resource type="Texture2D" uid="uid://vu7x2xuohquk" path="res://Assets/Ext_Cockpit/Montagne/Montagnes035.png" id="125_wsk5v"]
+[ext_resource type="Texture2D" uid="uid://xifh6x7oprlj" path="res://Assets/Ext_Cockpit/Montagne/Montagnes036.png" id="126_8rx34"]
 [ext_resource type="Texture2D" uid="uid://1tvfe1ne6khy" path="res://Assets/Ext_Cockpit/Nuages/Nuages36.png" id="126_aan8f"]
 [ext_resource type="Texture2D" uid="uid://cgnlspqgrme5j" path="res://Assets/Ext_Cockpit/Orage/OragePluie19.png" id="126_qfmek"]
 [ext_resource type="Texture2D" uid="uid://dj5ceifppt2gx" path="res://Assets/Ext_Cockpit/Nuages/Nuages37.png" id="127_dfroe"]
+[ext_resource type="Texture2D" uid="uid://ct2sid4nnld4l" path="res://Assets/Ext_Cockpit/Montagne/Montagnes037.png" id="127_nseu8"]
 [ext_resource type="Texture2D" uid="uid://5k3n76huvu1a" path="res://Assets/Ext_Cockpit/Orage/OragePluie20.png" id="127_q81rk"]
 [ext_resource type="Texture2D" uid="uid://c6h06gkqus3ux" path="res://Assets/Ext_Cockpit/Nuages/Nuages38.png" id="128_20wpm"]
 [ext_resource type="Texture2D" uid="uid://dpqrx54cjvet0" path="res://Assets/Ext_Cockpit/Orage/OragePluie21.png" id="128_dwg7g"]
+[ext_resource type="Texture2D" uid="uid://d1r4u04w7driv" path="res://Assets/Ext_Cockpit/Montagne/Montagnes038.png" id="128_sr6t3"]
+[ext_resource type="Texture2D" uid="uid://b75q77pq8jyjx" path="res://Assets/Ext_Cockpit/Montagne/Montagnes039.png" id="129_3eysr"]
 [ext_resource type="Texture2D" uid="uid://e3l2rcb78ckk" path="res://Assets/Ext_Cockpit/Nuages/Nuages39.png" id="129_56ygt"]
 [ext_resource type="Texture2D" uid="uid://dj15v4lvnmf6n" path="res://Assets/Ext_Cockpit/Orage/OragePluie22.png" id="129_e2e60"]
 [ext_resource type="Texture2D" uid="uid://b5abf0y072bhw" path="res://Assets/Ext_Cockpit/Orage/OragePluie23.png" id="130_8l2se"]
 [ext_resource type="Texture2D" uid="uid://dhqugpq3k637u" path="res://Assets/Ext_Cockpit/Nuages/Nuages40.png" id="130_sii1t"]
+[ext_resource type="Texture2D" uid="uid://behgwl2h782j5" path="res://Assets/Ext_Cockpit/Montagne/Montagnes040.png" id="130_um5qf"]
 [ext_resource type="Texture2D" uid="uid://cvtveoc2yrc6t" path="res://Assets/Ext_Cockpit/Nuages/Nuages41.png" id="131_i28lq"]
+[ext_resource type="Texture2D" uid="uid://coplfaq0guxbj" path="res://Assets/Ext_Cockpit/Montagne/Montagnes041.png" id="131_wttbs"]
 [ext_resource type="Texture2D" uid="uid://d0q6np3qbymlx" path="res://Assets/Ext_Cockpit/Orage/OragePluie24.png" id="131_xikag"]
+[ext_resource type="Texture2D" uid="uid://8eg42n31pd4c" path="res://Assets/Ext_Cockpit/Montagne/Montagnes042.png" id="132_1kjti"]
 [ext_resource type="Texture2D" uid="uid://b0kacxud6u0cl" path="res://Assets/Ext_Cockpit/Nuages/Nuages42.png" id="132_6hm3o"]
 [ext_resource type="Texture2D" uid="uid://bh0winu0b3jxd" path="res://Assets/Ext_Cockpit/Orage/OragePluie25.png" id="132_6kyc6"]
 [ext_resource type="Texture2D" uid="uid://duovm3kiqpx6e" path="res://Assets/Ext_Cockpit/Orage/OragePluie26.png" id="133_dd1qg"]
 [ext_resource type="Texture2D" uid="uid://doanic1ux3et1" path="res://Assets/Ext_Cockpit/Nuages/Nuages43.png" id="133_o7x86"]
+[ext_resource type="Texture2D" uid="uid://bhqmcuxsgeqrr" path="res://Assets/Ext_Cockpit/Montagne/Montagnes043.png" id="133_rfucp"]
 [ext_resource type="Texture2D" uid="uid://c72hft8fmrvhp" path="res://Assets/Ext_Cockpit/Nuages/Nuages44.png" id="134_eov7m"]
 [ext_resource type="Texture2D" uid="uid://bxvfcly35mvt4" path="res://Assets/Ext_Cockpit/Orage/OragePluie27.png" id="134_ispik"]
+[ext_resource type="Texture2D" uid="uid://bs2a7qt3myroj" path="res://Assets/Ext_Cockpit/Montagne/Montagnes044.png" id="134_o5bvw"]
 [ext_resource type="Texture2D" uid="uid://bjg166kmpk4h1" path="res://Assets/Ext_Cockpit/Nuages/Nuages45.png" id="135_0ixqg"]
+[ext_resource type="Texture2D" uid="uid://cr141hxuokoya" path="res://Assets/Ext_Cockpit/Montagne/Montagnes045.png" id="135_4u868"]
 [ext_resource type="Texture2D" uid="uid://ek6ctn8w1yj3" path="res://Assets/Ext_Cockpit/Orage/OragePluie28.png" id="135_jgi5o"]
 [ext_resource type="Texture2D" uid="uid://bynjg58xo215a" path="res://Assets/Ext_Cockpit/Orage/OragePluie29.png" id="136_6issg"]
+[ext_resource type="Texture2D" uid="uid://bv7rhu708duh1" path="res://Assets/Ext_Cockpit/Montagne/Montagnes046.png" id="136_8kjwd"]
 [ext_resource type="Texture2D" uid="uid://cyxgeomo72p02" path="res://Assets/Ext_Cockpit/Nuages/Nuages46.png" id="136_yrywg"]
 [ext_resource type="Texture2D" uid="uid://cemly5eyojplv" path="res://Assets/Ext_Cockpit/Orage/OragePluie30.png" id="137_5o8bc"]
 [ext_resource type="Texture2D" uid="uid://drst8uoe2oalu" path="res://Assets/Ext_Cockpit/Nuages/Nuages47.png" id="137_7jh8n"]
+[ext_resource type="Texture2D" uid="uid://bfuagcgj3qyfc" path="res://Assets/Ext_Cockpit/Montagne/Montagnes047.png" id="137_kdjdx"]
 [ext_resource type="Texture2D" uid="uid://b1fq1g8ea5r8e" path="res://Assets/Ext_Cockpit/Nuages/Nuages48.png" id="138_2ckdr"]
 [ext_resource type="Texture2D" uid="uid://dkdi4cnrur5ny" path="res://Assets/Ext_Cockpit/Orage/OragePluie31.png" id="138_5om1q"]
+[ext_resource type="Texture2D" uid="uid://dn6of81rktxyh" path="res://Assets/Ext_Cockpit/Montagne/Montagnes048.png" id="138_vom6g"]
 [ext_resource type="Texture2D" uid="uid://c3lxc15x3qjen" path="res://Assets/Ext_Cockpit/Nuages/Nuages49.png" id="139_2ufbf"]
+[ext_resource type="Texture2D" uid="uid://d3tigrveoxk53" path="res://Assets/Ext_Cockpit/Montagne/Montagnes049.png" id="139_b2fvg"]
 [ext_resource type="Texture2D" uid="uid://dl6yo6mv23ox4" path="res://Assets/Ext_Cockpit/Orage/OragePluie32.png" id="139_x7sjd"]
 [ext_resource type="Texture2D" uid="uid://ecyfcirgsi0g" path="res://Assets/Ext_Cockpit/Orage/OragePluie33.png" id="140_71qci"]
+[ext_resource type="Texture2D" uid="uid://dfsjwh31kqi3j" path="res://Assets/Ext_Cockpit/Montagne/Montagnes050.png" id="140_ojr4r"]
 [ext_resource type="Texture2D" uid="uid://nj1ago3e36fk" path="res://Assets/Ext_Cockpit/Nuages/Nuages50.png" id="140_wpocs"]
 [ext_resource type="Texture2D" uid="uid://bcngstq2wcwby" path="res://Assets/Ext_Cockpit/Nuages/Nuages51.png" id="141_7ml5l"]
 [ext_resource type="Texture2D" uid="uid://butpjscnww30j" path="res://Assets/Ext_Cockpit/Orage/OragePluie34.png" id="141_8xpgm"]
+[ext_resource type="Texture2D" uid="uid://13caq1y1rhpj" path="res://Assets/Ext_Cockpit/Montagne/Montagnes051.png" id="141_y4d4l"]
 [ext_resource type="Texture2D" uid="uid://b38u4mn56qmkp" path="res://Assets/Ext_Cockpit/Orage/OragePluie35.png" id="142_1dg62"]
+[ext_resource type="Texture2D" uid="uid://dsng5esuu8nhs" path="res://Assets/Ext_Cockpit/Montagne/Montagnes052.png" id="142_2vo5i"]
 [ext_resource type="Texture2D" uid="uid://c0eb4rsnt01rh" path="res://Assets/Ext_Cockpit/Nuages/Nuages52.png" id="142_8juxv"]
+[ext_resource type="Texture2D" uid="uid://cng7cjr2f7og6" path="res://Assets/Ext_Cockpit/Montagne/Montagnes053.png" id="143_fnbo4"]
 [ext_resource type="Texture2D" uid="uid://ip8wh1ermx1v" path="res://Assets/Ext_Cockpit/Nuages/Nuages53.png" id="143_lhc57"]
 [ext_resource type="Texture2D" uid="uid://cmavyxh7wblh0" path="res://Assets/Ext_Cockpit/Orage/OragePluie36.png" id="143_oh2o6"]
+[ext_resource type="Texture2D" uid="uid://1lvlni2rltns" path="res://Assets/Ext_Cockpit/Montagne/Montagnes054.png" id="144_66tit"]
 [ext_resource type="Texture2D" uid="uid://dljo45671bx1e" path="res://Assets/Ext_Cockpit/Nuages/Nuages54.png" id="144_g5wll"]
 [ext_resource type="Texture2D" uid="uid://fhx8xy0jn1lp" path="res://Assets/Ext_Cockpit/Orage/OragePluie37.png" id="144_x462u"]
 [ext_resource type="Texture2D" uid="uid://cotslth5ymp7x" path="res://Assets/Ext_Cockpit/Orage/OragePluie38.png" id="145_0oesy"]
 [ext_resource type="Texture2D" uid="uid://djvxs3o71f2ao" path="res://Assets/Ext_Cockpit/Nuages/Nuages55.png" id="145_42ipj"]
+[ext_resource type="Texture2D" uid="uid://juw8ai0toagt" path="res://Assets/Ext_Cockpit/Montagne/Montagnes055.png" id="145_v5ycc"]
 [ext_resource type="Texture2D" uid="uid://5vofwts61w5j" path="res://Assets/Ext_Cockpit/Orage/OragePluie39.png" id="146_45lom"]
+[ext_resource type="Texture2D" uid="uid://3hw2gc2bf7eo" path="res://Assets/Ext_Cockpit/Montagne/Montagnes056.png" id="146_dx71b"]
 [ext_resource type="Texture2D" uid="uid://c0qbqn0ax6n3k" path="res://Assets/Ext_Cockpit/Nuages/Nuages56.png" id="146_vtk6h"]
 [ext_resource type="Texture2D" uid="uid://bhxblq006werm" path="res://Assets/Ext_Cockpit/Orage/OragePluie40.png" id="147_070y8"]
+[ext_resource type="Texture2D" uid="uid://biop2edvf2rjk" path="res://Assets/Ext_Cockpit/Montagne/Montagnes057.png" id="147_dtpw6"]
 [ext_resource type="Texture2D" uid="uid://dct5vjj6t233b" path="res://Assets/Ext_Cockpit/Nuages/Nuages57.png" id="147_t3fca"]
+[ext_resource type="Texture2D" uid="uid://bswt631172u35" path="res://Assets/Ext_Cockpit/Montagne/Montagnes058.png" id="148_6ptdv"]
 [ext_resource type="Texture2D" uid="uid://b8of1yhbwvx0m" path="res://Assets/Ext_Cockpit/Nuages/Nuages58.png" id="148_62nve"]
 [ext_resource type="Texture2D" uid="uid://ca0skt7nvldpp" path="res://Assets/Ext_Cockpit/Orage/OragePluie41.png" id="148_ri3a6"]
+[ext_resource type="Texture2D" uid="uid://dehspp4uj6yf0" path="res://Assets/Ext_Cockpit/Montagne/Montagnes059.png" id="149_3ia27"]
 [ext_resource type="Texture2D" uid="uid://xbff46oq1bo7" path="res://Assets/Ext_Cockpit/Orage/OragePluie42.png" id="149_bbvhi"]
 [ext_resource type="Texture2D" uid="uid://qi1eno1cmumu" path="res://Assets/Ext_Cockpit/Nuages/Nuages59.png" id="149_uwyq1"]
 [ext_resource type="Texture2D" uid="uid://coobquiwgu4cg" path="res://Assets/Ext_Cockpit/Orage/OragePluie43.png" id="150_jbdrw"]
 [ext_resource type="Texture2D" uid="uid://b11ko1rfaa1p1" path="res://Assets/Ext_Cockpit/Nuages/Nuages60.png" id="150_r3v5g"]
+[ext_resource type="Texture2D" uid="uid://d18yat3nbdy58" path="res://Assets/Ext_Cockpit/Montagne/Montagnes060.png" id="150_y5plu"]
 [ext_resource type="Texture2D" uid="uid://cpx2kt6ew86o2" path="res://Assets/Ext_Cockpit/Orage/OragePluie44.png" id="151_3h2do"]
 [ext_resource type="Texture2D" uid="uid://ccgma8k2jcj0y" path="res://Assets/Ext_Cockpit/Nuages/Nuages61.png" id="151_ctxab"]
+[ext_resource type="Texture2D" uid="uid://bxt5mhjfvkbua" path="res://Assets/Ext_Cockpit/Montagne/Montagnes061.png" id="151_skxfr"]
 [ext_resource type="Texture2D" uid="uid://q0eppw7ty5n2" path="res://Assets/Ext_Cockpit/Nuages/Nuages62.png" id="152_1tqwm"]
 [ext_resource type="Texture2D" uid="uid://nbiawff23b8b" path="res://Assets/Ext_Cockpit/Orage/OragePluie45.png" id="152_3rvjo"]
+[ext_resource type="Texture2D" uid="uid://do351qlbtd0p6" path="res://Assets/Ext_Cockpit/Montagne/Montagnes062.png" id="152_qbrfk"]
+[ext_resource type="Texture2D" uid="uid://c88wjcoa7amvo" path="res://Assets/Ext_Cockpit/Montagne/Montagnes063.png" id="153_ilt2e"]
 [ext_resource type="Texture2D" uid="uid://cv5et0kfblipj" path="res://Assets/Ext_Cockpit/Nuages/Nuages63.png" id="153_ma7oo"]
 [ext_resource type="Texture2D" uid="uid://6uloj1px2l2i" path="res://Assets/Ext_Cockpit/Orage/OragePluie46.png" id="153_rtm2f"]
 [ext_resource type="Texture2D" uid="uid://btuqdtykkwujg" path="res://Assets/Ext_Cockpit/Orage/OragePluie47.png" id="154_ndua0"]
+[ext_resource type="Texture2D" uid="uid://c027256cx88o0" path="res://Assets/Ext_Cockpit/Montagne/Montagnes064.png" id="154_p2exs"]
 [ext_resource type="Texture2D" uid="uid://b0n4owh3f4ggj" path="res://Assets/Ext_Cockpit/Nuages/Nuages64.png" id="154_tecbp"]
 [ext_resource type="Texture2D" uid="uid://c2yipstkvtmcx" path="res://Assets/Ext_Cockpit/Nuages/Nuages65.png" id="155_0n3jc"]
 [ext_resource type="Texture2D" uid="uid://ca5wipufe4g1p" path="res://Assets/Ext_Cockpit/Orage/OragePluie48.png" id="155_afklx"]
+[ext_resource type="Texture2D" uid="uid://cd4dr8is6x35a" path="res://Assets/Ext_Cockpit/Montagne/Montagnes065.png" id="155_xvvxe"]
+[ext_resource type="Texture2D" uid="uid://hanssug30e4k" path="res://Assets/Ext_Cockpit/Montagne/Montagnes066.png" id="156_84r8j"]
 [ext_resource type="Texture2D" uid="uid://bhw300h3tdtc1" path="res://Assets/Ext_Cockpit/Nuages/Nuages66.png" id="156_413t2"]
 [ext_resource type="Texture2D" uid="uid://d0cjcenysn6i6" path="res://Assets/Ext_Cockpit/Orage/OragePluie49.png" id="156_o8v7y"]
+[ext_resource type="Texture2D" uid="uid://rgqegwkaq5my" path="res://Assets/Ext_Cockpit/Montagne/Montagnes067.png" id="157_ay3n1"]
 [ext_resource type="Texture2D" uid="uid://efatgcgr6oiv" path="res://Assets/Ext_Cockpit/Orage/OragePluie50.png" id="157_f4e5e"]
 [ext_resource type="Texture2D" uid="uid://chycjaf75yn51" path="res://Assets/Ext_Cockpit/Nuages/Nuages67.png" id="157_osnr7"]
 [ext_resource type="Texture2D" uid="uid://b4gifk1hv7b3b" path="res://Assets/Ext_Cockpit/Nuages/Nuages68.png" id="158_3xbo6"]
 [ext_resource type="Texture2D" uid="uid://11v26ilsuirs" path="res://Assets/Ext_Cockpit/Orage/OragePluie51.png" id="158_owl37"]
+[ext_resource type="Texture2D" uid="uid://m0qekn7unxui" path="res://Assets/Ext_Cockpit/Montagne/Montagnes068.png" id="158_xymsf"]
 [ext_resource type="Texture2D" uid="uid://jwvbqpd0ogte" path="res://Assets/Ext_Cockpit/Orage/OragePluie52.png" id="159_6hvb5"]
 [ext_resource type="Texture2D" uid="uid://txq5ww6ur3ku" path="res://Assets/Ext_Cockpit/Nuages/Nuages69.png" id="159_enxf5"]
+[ext_resource type="Texture2D" uid="uid://d11ktn3x70l87" path="res://Assets/Ext_Cockpit/Montagne/Montagnes069.png" id="159_gtvfd"]
 [ext_resource type="Texture2D" uid="uid://dodj0llibem70" path="res://Assets/Ext_Cockpit/Nuages/Nuages70.png" id="160_donhk"]
+[ext_resource type="Texture2D" uid="uid://b88ws3yntagj0" path="res://Assets/Ext_Cockpit/Montagne/Montagnes070.png" id="160_k0yo4"]
 [ext_resource type="Texture2D" uid="uid://cak8fuqf8uaje" path="res://Assets/Ext_Cockpit/Orage/OragePluie53.png" id="160_vbuyh"]
 [ext_resource type="Texture2D" uid="uid://ftqj8402vujp" path="res://Assets/Ext_Cockpit/Orage/OragePluie54.png" id="161_7xn58"]
 [ext_resource type="Texture2D" uid="uid://bpg20mcsb7lla" path="res://Assets/Ext_Cockpit/Nuages/Nuages71.png" id="161_efpp7"]
+[ext_resource type="Texture2D" uid="uid://dtg5r8a6kuiiv" path="res://Assets/Ext_Cockpit/Montagne/Montagnes071.png" id="161_k18qb"]
+[ext_resource type="Texture2D" uid="uid://ijlrtn2akcxu" path="res://Assets/Ext_Cockpit/Montagne/Montagnes072.png" id="162_2n1x3"]
 [ext_resource type="Texture2D" uid="uid://cu3pwiwgkxm40" path="res://Assets/Ext_Cockpit/Nuages/Nuages72.png" id="162_nh62b"]
 [ext_resource type="Texture2D" uid="uid://d0jepehna8i2y" path="res://Assets/Ext_Cockpit/Orage/OragePluie55.png" id="162_ru8u4"]
 [ext_resource type="Texture2D" uid="uid://hxblo1cann1c" path="res://Assets/Ext_Cockpit/Orage/OragePluie56.png" id="163_7pby2"]
+[ext_resource type="Texture2D" uid="uid://bapt7i83k5f8v" path="res://Assets/Ext_Cockpit/Montagne/Montagnes073.png" id="163_x46xf"]
 [ext_resource type="Texture2D" uid="uid://cu04hwt1dhulu" path="res://Assets/Ext_Cockpit/Nuages/Nuages73.png" id="163_y4ul6"]
 [ext_resource type="Texture2D" uid="uid://bhhn3ph68yufs" path="res://Assets/Ext_Cockpit/Orage/OragePluie57.png" id="164_0dbga"]
+[ext_resource type="Texture2D" uid="uid://b5uem8xfbrtqn" path="res://Assets/Ext_Cockpit/Montagne/Montagnes074.png" id="164_3jjkw"]
 [ext_resource type="Texture2D" uid="uid://cvabyvu4pqmhc" path="res://Assets/Ext_Cockpit/Nuages/Nuages74.png" id="164_als8l"]
 [ext_resource type="Texture2D" uid="uid://coge3ktvyan57" path="res://Assets/Ext_Cockpit/Orage/OragePluie58.png" id="165_b1u0g"]
+[ext_resource type="Texture2D" uid="uid://bwo8ucrngi80w" path="res://Assets/Ext_Cockpit/Montagne/Montagnes075.png" id="165_g266n"]
 [ext_resource type="Texture2D" uid="uid://c60cmtaja0pw1" path="res://Assets/Ext_Cockpit/Nuages/Nuages75.png" id="165_ifj3e"]
 [ext_resource type="Texture2D" uid="uid://ck3yf1txj1f0d" path="res://Assets/Ext_Cockpit/Nuages/Nuages76.png" id="166_1qtfa"]
 [ext_resource type="Texture2D" uid="uid://br518gem70al6" path="res://Assets/Ext_Cockpit/Orage/OragePluie59.png" id="166_egbjy"]
+[ext_resource type="Texture2D" uid="uid://b8xkyx5lgatwv" path="res://Assets/Ext_Cockpit/Montagne/Montagnes076.png" id="166_has51"]
+[ext_resource type="Texture2D" uid="uid://oh88cnx36j5g" path="res://Assets/Ext_Cockpit/Montagne/Montagnes077.png" id="167_fia4h"]
 [ext_resource type="Texture2D" uid="uid://c5ae2evudeucy" path="res://Assets/plaque.png" id="167_n7m0k"]
 [ext_resource type="Texture2D" uid="uid://bjie82vbcb4en" path="res://Assets/Ext_Cockpit/Nuages/Nuages77.png" id="167_yulcu"]
+[ext_resource type="Texture2D" uid="uid://b2ad0fvr4u5hn" path="res://Assets/Ext_Cockpit/Montagne/Montagnes078.png" id="168_gumfb"]
 [ext_resource type="Texture2D" uid="uid://ce2t7h14fry6i" path="res://Assets/Ext_Cockpit/Nuages/Nuages78.png" id="168_i31ne"]
 [ext_resource type="Texture2D" uid="uid://cub8fntunbe0j" path="res://Assets/Ext_Cockpit/Nuages/Nuages79.png" id="169_0ky3t"]
+[ext_resource type="Texture2D" uid="uid://bq2cuy8bpn213" path="res://Assets/Ext_Cockpit/Montagne/Montagnes079.png" id="169_x4d7f"]
 [ext_resource type="Texture2D" uid="uid://haui2m16re12" path="res://Assets/Ext_Cockpit/Nuages/Nuages80.png" id="170_rt3gh"]
+[ext_resource type="Texture2D" uid="uid://co22ed07tew0b" path="res://Assets/Ext_Cockpit/Montagne/Montagnes080.png" id="170_ttu56"]
 [ext_resource type="Texture2D" uid="uid://b2hcq224k4d7c" path="res://Assets/Ext_Cockpit/Nuages/Nuages81.png" id="171_7lgoy"]
+[ext_resource type="Texture2D" uid="uid://xss85yrelmjn" path="res://Assets/Ext_Cockpit/Montagne/Montagnes081.png" id="171_8agen"]
+[ext_resource type="Texture2D" uid="uid://cg7khks4jhhto" path="res://Assets/Ext_Cockpit/Montagne/Montagnes082.png" id="172_3gmn0"]
 [ext_resource type="Texture2D" uid="uid://dp22vj654avmf" path="res://Assets/Ext_Cockpit/Nuages/Nuages82.png" id="172_43uw5"]
 [ext_resource type="Texture2D" uid="uid://vcaxwj5xed24" path="res://Assets/Ext_Cockpit/Nuages/Nuages83.png" id="173_cvk5v"]
+[ext_resource type="Texture2D" uid="uid://38wd7ix3h128" path="res://Assets/Ext_Cockpit/Montagne/Montagnes083.png" id="173_wpq1j"]
 [ext_resource type="Texture2D" uid="uid://b1htg6phf6ujt" path="res://Assets/Ext_Cockpit/Nuages/Nuages84.png" id="174_cx6x2"]
+[ext_resource type="Texture2D" uid="uid://cc842whmf175f" path="res://Assets/Ext_Cockpit/Montagne/Montagnes084.png" id="174_hbcii"]
 [ext_resource type="Texture2D" uid="uid://i65v7bxqllg3" path="res://Assets/Ext_Cockpit/Nuages/Nuages85.png" id="175_b8spe"]
+[ext_resource type="Texture2D" uid="uid://dodvr6fmgq187" path="res://Assets/Ext_Cockpit/Montagne/Montagnes085.png" id="175_we0qm"]
 [ext_resource type="Texture2D" uid="uid://nvpmoya58ki5" path="res://Assets/Ext_Cockpit/Nuages/Nuages86.png" id="176_pkupg"]
+[ext_resource type="Texture2D" uid="uid://cw0sojurhvh7i" path="res://Assets/Ext_Cockpit/Montagne/Montagnes086.png" id="176_yitsu"]
 [ext_resource type="Texture2D" uid="uid://j5p5coa0a1ho" path="res://Assets/Ext_Cockpit/Nuages/Nuages87.png" id="177_kf7bw"]
+[ext_resource type="Texture2D" uid="uid://bmwmnmyjx3616" path="res://Assets/Ext_Cockpit/Montagne/Montagnes087.png" id="177_y6wql"]
+[ext_resource type="Texture2D" uid="uid://disvkftwbh3ny" path="res://Assets/Ext_Cockpit/Montagne/Montagnes088.png" id="178_othbm"]
+[ext_resource type="Texture2D" uid="uid://bs55nd00f1q7a" path="res://Assets/Ext_Cockpit/Montagne/Montagnes089.png" id="179_e0ier"]
+[ext_resource type="Texture2D" uid="uid://ds8alsk44gg2p" path="res://Assets/Ext_Cockpit/Montagne/Montagnes090.png" id="180_5fxw6"]
+[ext_resource type="Texture2D" uid="uid://tkv7f4vnbwsu" path="res://Assets/Ext_Cockpit/Montagne/Montagnes091.png" id="181_44wx3"]
 [ext_resource type="Texture2D" uid="uid://gwgxsldvo6p2" path="res://Assets/MiniJeux/Slider/diode_rouge.png" id="181_d7eke"]
 [ext_resource type="Script" path="res://Scripts/task_manager_1_2P.gd" id="182_lbu17"]
 [ext_resource type="Texture2D" uid="uid://gwtdj25hs4uw" path="res://Assets/MiniJeux/Slider/diode_verte.png" id="182_rjk6p"]
+[ext_resource type="Texture2D" uid="uid://ddu7wrcb7u06d" path="res://Assets/Ext_Cockpit/Montagne/Montagnes092.png" id="182_x7nq1"]
+[ext_resource type="Texture2D" uid="uid://cqbtks8nhqa6f" path="res://Assets/Ext_Cockpit/Montagne/Montagnes093.png" id="183_06cnu"]
+[ext_resource type="Texture2D" uid="uid://srmjej1il0km" path="res://Assets/Ext_Cockpit/Montagne/Montagnes094.png" id="184_b5kq7"]
+[ext_resource type="Texture2D" uid="uid://1o1asiwus7j3" path="res://Assets/Ext_Cockpit/Montagne/Montagnes095.png" id="185_i7xh1"]
+[ext_resource type="Texture2D" uid="uid://c0gngsxip4gb3" path="res://Assets/Ext_Cockpit/Montagne/Montagnes096.png" id="186_4r8w8"]
+[ext_resource type="Texture2D" uid="uid://wjy4g5sv6pew" path="res://Assets/Ext_Cockpit/Montagne/Montagnes097.png" id="187_772qu"]
+[ext_resource type="Texture2D" uid="uid://cy1q7smx57y2m" path="res://Assets/Ext_Cockpit/Montagne/Montagnes098.png" id="188_ce5vs"]
+[ext_resource type="Texture2D" uid="uid://d1jlxwuhto3cm" path="res://Assets/Ext_Cockpit/Montagne/Montagnes099.png" id="189_2jqpc"]
+[ext_resource type="Texture2D" uid="uid://bib065gp84yp6" path="res://Assets/Ext_Cockpit/Montagne/Montagnes100.png" id="190_8dsi3"]
+[ext_resource type="Texture2D" uid="uid://b15qxnf70w870" path="res://Assets/Ext_Cockpit/Montagne/Montagnes101.png" id="191_tn413"]
 [ext_resource type="Texture2D" uid="uid://chnh37igs8g5a" path="res://Assets/Disco/disco1.png" id="202_wbby1"]
 [ext_resource type="Texture2D" uid="uid://oaltrp5alxp7" path="res://Assets/Disco/disco2.png" id="203_t3lrv"]
 [ext_resource type="Texture2D" uid="uid://bnyugsf8bknr0" path="res://Assets/Disco/disco3.png" id="204_lwvid"]
@@ -361,277 +481,644 @@
 [ext_resource type="PackedScene" uid="uid://dexh2ov8nsr7d" path="res://Scenes/Minigame/simon.tscn" id="206_i1the"]
 [ext_resource type="FontFile" uid="uid://d3iepk5e0g4n3" path="res://Assets/Font/OffBitTrial-DotBold.ttf" id="209_ts1or"]
 [ext_resource type="PackedScene" uid="uid://b1qnrd017layw" path="res://Scenes/Computer.tscn" id="274_soxht"]
+[ext_resource type="Script" path="res://addons/MultiTouchGui/MultiTouchLevierPlasma.gd" id="340_7m4xb"]
+[ext_resource type="Script" path="res://addons/MultiTouchGui/MultiTouchLevierAlternateur.gd" id="343_mofsi"]
 [ext_resource type="Texture2D" uid="uid://dicohot5qhrol" path="res://Assets/MiniJeux/Nitro/nitroOn.png" id="349_1cglm"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_v7p67"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_2w5wg"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_l3w0a")
+"texture": ExtResource("2_lvh17")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_6ubdi")
+"texture": ExtResource("3_yk438")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_a0lqk")
+"texture": ExtResource("4_peo8u")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_3f7dd")
+"texture": ExtResource("5_q56gs")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_11l3u")
+"texture": ExtResource("6_tgfj5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_ylbkw")
+"texture": ExtResource("7_6smwc")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_vfk3b")
+"texture": ExtResource("8_cduog")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_6mirr")
+"texture": ExtResource("9_jkb47")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_g44y0")
+"texture": ExtResource("10_btygm")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_bkn8y")
+"texture": ExtResource("11_ycbkt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_ai303")
+"texture": ExtResource("12_lx0vq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_1680c")
+"texture": ExtResource("13_dnchy")
 }, {
 "duration": 1.0,
-"texture": ExtResource("14_8ohwu")
+"texture": ExtResource("14_gn0mi")
 }, {
 "duration": 1.0,
-"texture": ExtResource("15_im88j")
+"texture": ExtResource("15_4p7kd")
 }, {
 "duration": 1.0,
-"texture": ExtResource("16_cmx1l")
+"texture": ExtResource("16_vi8tu")
 }, {
 "duration": 1.0,
-"texture": ExtResource("17_y1qqa")
+"texture": ExtResource("17_w7cfm")
 }, {
 "duration": 1.0,
-"texture": ExtResource("18_wx37f")
+"texture": ExtResource("18_7qqj2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("19_a345t")
+"texture": ExtResource("19_sc053")
 }, {
 "duration": 1.0,
-"texture": ExtResource("20_nqjrm")
+"texture": ExtResource("20_a7x0q")
 }, {
 "duration": 1.0,
-"texture": ExtResource("21_th4uv")
+"texture": ExtResource("21_bqv4p")
 }, {
 "duration": 1.0,
-"texture": ExtResource("22_sgejg")
+"texture": ExtResource("22_a4u4k")
 }, {
 "duration": 1.0,
-"texture": ExtResource("23_n41y4")
+"texture": ExtResource("23_l7lfp")
 }, {
 "duration": 1.0,
-"texture": ExtResource("24_uxii8")
+"texture": ExtResource("24_6i71j")
 }, {
 "duration": 1.0,
-"texture": ExtResource("25_4gs7k")
+"texture": ExtResource("25_tywag")
 }, {
 "duration": 1.0,
-"texture": ExtResource("26_8jfj0")
+"texture": ExtResource("26_6n7nu")
 }, {
 "duration": 1.0,
-"texture": ExtResource("27_vgrk8")
+"texture": ExtResource("27_i860w")
 }, {
 "duration": 1.0,
-"texture": ExtResource("28_1qbcy")
+"texture": ExtResource("28_b2dy8")
 }, {
 "duration": 1.0,
-"texture": ExtResource("29_rpj8l")
+"texture": ExtResource("29_mosin")
 }, {
 "duration": 1.0,
-"texture": ExtResource("30_urkyh")
+"texture": ExtResource("30_umeem")
 }, {
 "duration": 1.0,
-"texture": ExtResource("31_84k00")
+"texture": ExtResource("31_7id2l")
 }, {
 "duration": 1.0,
-"texture": ExtResource("32_0tw1l")
+"texture": ExtResource("32_q5xhs")
 }, {
 "duration": 1.0,
-"texture": ExtResource("33_5u4ky")
+"texture": ExtResource("33_i0q4n")
 }, {
 "duration": 1.0,
-"texture": ExtResource("34_w1dnv")
+"texture": ExtResource("34_ke6tn")
 }, {
 "duration": 1.0,
-"texture": ExtResource("35_m5nsa")
+"texture": ExtResource("35_hw8j1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("36_fjs8b")
+"texture": ExtResource("36_7k0w4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("37_wkmwj")
+"texture": ExtResource("37_8cql4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("38_fu67a")
+"texture": ExtResource("38_3fymm")
 }, {
 "duration": 1.0,
-"texture": ExtResource("39_r5piu")
+"texture": ExtResource("39_ot34y")
 }, {
 "duration": 1.0,
-"texture": ExtResource("40_46174")
+"texture": ExtResource("40_3r5qc")
 }, {
 "duration": 1.0,
-"texture": ExtResource("41_kg6oq")
+"texture": ExtResource("41_kb47x")
 }, {
 "duration": 1.0,
-"texture": ExtResource("42_iqdv8")
+"texture": ExtResource("42_hnyul")
 }, {
 "duration": 1.0,
-"texture": ExtResource("43_xbyul")
+"texture": ExtResource("43_m5n1k")
 }, {
 "duration": 1.0,
-"texture": ExtResource("44_n3xjf")
+"texture": ExtResource("44_a2i3i")
 }, {
 "duration": 1.0,
-"texture": ExtResource("45_bpqdo")
+"texture": ExtResource("45_sbns8")
 }, {
 "duration": 1.0,
-"texture": ExtResource("46_yunk3")
+"texture": ExtResource("46_1a4xv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("47_p4erv")
+"texture": ExtResource("47_lr3ju")
 }, {
 "duration": 1.0,
-"texture": ExtResource("48_xavvt")
+"texture": ExtResource("48_dto6w")
 }, {
 "duration": 1.0,
-"texture": ExtResource("49_72cxl")
+"texture": ExtResource("49_68skn")
 }, {
 "duration": 1.0,
-"texture": ExtResource("50_p370y")
+"texture": ExtResource("50_iqoh4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("51_47lxt")
+"texture": ExtResource("51_ogprx")
 }, {
 "duration": 1.0,
-"texture": ExtResource("52_hksql")
+"texture": ExtResource("52_62pab")
 }, {
 "duration": 1.0,
-"texture": ExtResource("53_mryif")
+"texture": ExtResource("53_uy6wk")
 }, {
 "duration": 1.0,
-"texture": ExtResource("54_sqgjg")
+"texture": ExtResource("54_xe5rr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("55_l11i4")
+"texture": ExtResource("55_67ld5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("56_orj8y")
+"texture": ExtResource("56_u3i2s")
 }, {
 "duration": 1.0,
-"texture": ExtResource("57_b2e3w")
+"texture": ExtResource("57_6bb56")
 }, {
 "duration": 1.0,
-"texture": ExtResource("58_5nnej")
+"texture": ExtResource("58_2c2yt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("59_je43t")
+"texture": ExtResource("59_upliy")
 }, {
 "duration": 1.0,
-"texture": ExtResource("60_7av57")
+"texture": ExtResource("60_vf1wx")
 }, {
 "duration": 1.0,
-"texture": ExtResource("61_ag2nt")
+"texture": ExtResource("61_mfs71")
 }, {
 "duration": 1.0,
-"texture": ExtResource("62_f68vq")
+"texture": ExtResource("62_ohpa7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("63_lahp2")
+"texture": ExtResource("63_sy2md")
 }, {
 "duration": 1.0,
-"texture": ExtResource("64_sqli6")
+"texture": ExtResource("64_8gspw")
 }, {
 "duration": 1.0,
-"texture": ExtResource("65_ru0iu")
+"texture": ExtResource("65_w61vm")
 }, {
 "duration": 1.0,
-"texture": ExtResource("66_xxjbo")
+"texture": ExtResource("66_54faw")
 }, {
 "duration": 1.0,
-"texture": ExtResource("67_h6hbj")
+"texture": ExtResource("67_8xviu")
 }, {
 "duration": 1.0,
-"texture": ExtResource("68_s7kxs")
+"texture": ExtResource("68_2pu8h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("69_jun0f")
+"texture": ExtResource("69_s4ig5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("70_wdqib")
+"texture": ExtResource("70_i8ynv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("71_m8v3d")
+"texture": ExtResource("71_uoyo1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("72_sedvh")
+"texture": ExtResource("72_cby22")
 }, {
 "duration": 1.0,
-"texture": ExtResource("73_nbe8l")
+"texture": ExtResource("73_uumjn")
 }, {
 "duration": 1.0,
-"texture": ExtResource("74_fdyye")
+"texture": ExtResource("74_ccr0h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("75_ulart")
+"texture": ExtResource("75_ioamw")
 }, {
 "duration": 1.0,
-"texture": ExtResource("76_kenga")
+"texture": ExtResource("76_xgwrs")
 }, {
 "duration": 1.0,
-"texture": ExtResource("77_tysxs")
+"texture": ExtResource("77_yuhe1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("78_pev3e")
+"texture": ExtResource("78_hfaw4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("79_ortmo")
+"texture": ExtResource("79_0xe0g")
 }, {
 "duration": 1.0,
-"texture": ExtResource("80_a3sca")
+"texture": ExtResource("80_rky32")
 }, {
 "duration": 1.0,
-"texture": ExtResource("81_gukvc")
+"texture": ExtResource("81_i8al7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("82_2bpnd")
+"texture": ExtResource("82_dgsm6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("83_6qya3")
+"texture": ExtResource("83_d07kr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("84_h38x8")
+"texture": ExtResource("84_t6ydd")
 }, {
 "duration": 1.0,
-"texture": ExtResource("85_o2lnm")
+"texture": ExtResource("85_yaxik")
 }, {
 "duration": 1.0,
-"texture": ExtResource("86_a2pm8")
+"texture": ExtResource("86_b6h12")
 }, {
 "duration": 1.0,
-"texture": ExtResource("87_t6w3b")
+"texture": ExtResource("87_18gxj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("88_s6qvc")
+"texture": ExtResource("88_sxx40")
 }, {
 "duration": 1.0,
-"texture": ExtResource("89_boa2q")
+"texture": ExtResource("89_j0k4f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_rbmip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_1doc5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_0yrku")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_b30ev")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_odo30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_wxyd7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_rgdfc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_sxcjs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_wkmjq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_7x46e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_doj43")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_ld2ap")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_8cl5m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_hjhgr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_cjcly")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_aqm4r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_ty8er")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_ey1bt")
 }],
 "loop": true,
 "name": &"Eau",
+"speed": 25.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("90_vgkkx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_4tbko")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_2iibr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_hcp17")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_resjd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_6rbcl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_ppwcg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_7y8vo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_xh66v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_vwppo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_b3ucr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_f77g2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_0gs34")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_ebgh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_kgai4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_gk8lc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_ulaxc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_2i2ia")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_xjb46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_gveni")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_031qx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_gkq0e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_ecx4e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_uu7jq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_ll5hg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_2v0sf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_y8xbi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_71sry")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_7ky8q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_v07yd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_ndx3o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_mxasw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_yjdjm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_bk35i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_d5wjd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_wsk5v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126_8rx34")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_nseu8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_sr6t3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_3eysr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130_um5qf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("131_wttbs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("132_1kjti")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133_rfucp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("134_o5bvw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135_4u868")
+}, {
+"duration": 1.0,
+"texture": ExtResource("136_8kjwd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137_kdjdx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("138_vom6g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("139_b2fvg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140_ojr4r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141_y4d4l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("142_2vo5i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("143_fnbo4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("144_66tit")
+}, {
+"duration": 1.0,
+"texture": ExtResource("145_v5ycc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("146_dx71b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("147_dtpw6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("148_6ptdv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("149_3ia27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("150_y5plu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("151_skxfr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("152_qbrfk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("153_ilt2e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("154_p2exs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("155_xvvxe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("156_84r8j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("157_ay3n1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("158_xymsf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("159_gtvfd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("160_k0yo4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("161_k18qb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("162_2n1x3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("163_x46xf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("164_3jjkw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("165_g266n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("166_has51")
+}, {
+"duration": 1.0,
+"texture": ExtResource("167_fia4h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("168_gumfb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("169_x4d7f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("170_ttu56")
+}, {
+"duration": 1.0,
+"texture": ExtResource("171_8agen")
+}, {
+"duration": 1.0,
+"texture": ExtResource("172_3gmn0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("173_wpq1j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("174_hbcii")
+}, {
+"duration": 1.0,
+"texture": ExtResource("175_we0qm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("176_yitsu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("177_y6wql")
+}, {
+"duration": 1.0,
+"texture": ExtResource("178_othbm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("179_e0ier")
+}, {
+"duration": 1.0,
+"texture": ExtResource("180_5fxw6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("181_44wx3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("182_x7nq1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("183_06cnu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("184_b5kq7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("185_i7xh1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("186_4r8w8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("187_772qu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("188_ce5vs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("189_2jqpc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("190_8dsi3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("191_tn413")
+}],
+"loop": true,
+"name": &"Montagne",
 "speed": 25.0
 }, {
 "frames": [{
@@ -1392,16 +1879,24 @@ font_size = 35
 font_color = Color(0, 1, 0, 1)
 shadow_size = 0
 
-[sub_resource type="LabelSettings" id="LabelSettings_cqunm"]
+[sub_resource type="LabelSettings" id="LabelSettings_xpkqs"]
 line_spacing = 0.0
 font = ExtResource("209_ts1or")
-font_size = 50
+font_size = 40
 
 [node name="Panel" type="Node2D"]
 script = ExtResource("1_mht4p")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0
+
+[node name="VueAvion" type="AnimatedSprite2D" parent="."]
+z_index = -4
+position = Vector2(-30.2222, -17)
+scale = Vector2(1.03148, 1.03148)
+sprite_frames = SubResource("SpriteFrames_2w5wg")
+animation = &"Eau"
+centered = false
 
 [node name="FadeRect" type="ColorRect" parent="."]
 z_index = 4096
@@ -1414,14 +1909,6 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
 metadata/_edit_use_anchors_ = true
-
-[node name="VueAvion" type="AnimatedSprite2D" parent="."]
-z_index = -4
-position = Vector2(-30.2222, -17)
-scale = Vector2(1.03148, 1.03148)
-sprite_frames = SubResource("SpriteFrames_v7p67")
-animation = &"Nuages"
-centered = false
 
 [node name="TV" parent="." instance=ExtResource("6_hjq2f")]
 z_index = 1
@@ -1439,6 +1926,7 @@ autoplay = "default"
 frame_progress = 0.557843
 
 [node name="Alert" type="Sprite2D" parent="."]
+z_index = 1
 position = Vector2(1411.63, 46)
 rotation = 3.11716
 scale = Vector2(0.14567, 0.144975)
@@ -1569,13 +2057,12 @@ offset_bottom = 626.0
 scale = Vector2(0.9, 0.9)
 focus_mode = 0
 action_mode = 0
-icon = ExtResource("115_anwc2")
+icon = ExtResource("116_pgyi6")
 flat = true
-icon_alignment = 1
 expand_icon = true
-script = ExtResource("105_nuyac")
-icon_normal = ExtResource("115_anwc2")
-icon_pressed = ExtResource("116_pgyi6")
+script = ExtResource("340_7m4xb")
+icon_normal = ExtResource("116_pgyi6")
+icon_pressed = ExtResource("115_anwc2")
 
 [node name="Alternateur" type="Button" parent="TaskManager"]
 offset_left = 239.0
@@ -1585,13 +2072,12 @@ offset_bottom = 626.0
 scale = Vector2(0.9, 0.9)
 focus_mode = 0
 action_mode = 0
-icon = ExtResource("113_xpcab")
+icon = ExtResource("114_8xqla")
 flat = true
-icon_alignment = 1
 expand_icon = true
-script = ExtResource("105_nuyac")
-icon_normal = ExtResource("113_xpcab")
-icon_pressed = ExtResource("114_8xqla")
+script = ExtResource("343_mofsi")
+icon_normal = ExtResource("114_8xqla")
+icon_pressed = ExtResource("113_xpcab")
 
 [node name="TaskManagerTwo" type="Node" parent="."]
 script = ExtResource("206_anvfx")
@@ -1636,7 +2122,6 @@ offset_right = 506.0
 offset_bottom = 772.0
 focus_mode = 0
 action_mode = 0
-icon = ExtResource("349_1cglm")
 flat = true
 expand_icon = true
 script = ExtResource("105_nuyac")
@@ -1716,28 +2201,6 @@ scale = Vector2(0.24, 0.24)
 texture = ExtResource("35_bhaxy")
 flip_h = true
 
-[node name="SecondsLabel" type="Label" parent="."]
-z_index = 7
-offset_left = 738.0
-offset_top = 352.0
-offset_right = 792.0
-offset_bottom = 403.0
-text = "99"
-label_settings = SubResource("LabelSettings_cqunm")
-vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
-
-[node name="MinutesLabel" type="Label" parent="."]
-z_index = 7
-offset_left = 659.0
-offset_top = 352.0
-offset_right = 713.0
-offset_bottom = 403.0
-text = "99"
-label_settings = SubResource("LabelSettings_cqunm")
-vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
-
 [node name="CafeAnimation" parent="." instance=ExtResource("36_mf1ra")]
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
@@ -1748,3 +2211,27 @@ autoplay = true
 [node name="EjectButton" parent="." instance=ExtResource("108_3r7v1")]
 position = Vector2(1834, 519)
 scale = Vector2(1.01, 1.01)
+
+[node name="SecondsLabel" type="Label" parent="."]
+z_index = 7
+offset_left = 738.0
+offset_top = 348.0
+offset_right = 792.0
+offset_bottom = 399.0
+text = "00"
+label_settings = SubResource("LabelSettings_xpkqs")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MinutesLabel" type="Label" parent="."]
+z_index = 7
+offset_left = 659.0
+offset_top = 348.0
+offset_right = 713.0
+offset_bottom = 399.0
+text = "00"
+label_settings = SubResource("LabelSettings_xpkqs")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
